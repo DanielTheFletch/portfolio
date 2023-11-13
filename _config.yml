@@ -1,1 +1,6 @@
 # Configuration settings
+
+# GitHub Pages compatibility
+title: "Jekyll Test"
+url: "https://danielthefletch.github.io"
+baseurl: "/portfolio"
