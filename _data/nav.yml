@@ -1,0 +1,10 @@
+- name: About
+  link: /
+- name: Activity
+  link: /activity.html
+- name: Profiles
+  link: /profiles.html
+- name: Projects
+  link: /projects.html
+- name: Resources
+  link: /resources.html
