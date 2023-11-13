@@ -2,6 +2,11 @@
 defaults:
   - scope:
       path: {{ baseurl }}
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: {{ baseurl }}
     values:
       layout: "default"
 
