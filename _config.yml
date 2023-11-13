@@ -1,4 +1,9 @@
-# Configuration settings
+# Default values
+defaults:
+  - scope:
+      path: {{ baseurl }}
+    values:
+      layout: "default"
 
 # GitHub Pages compatibility
 title: "Jekyll Test"
