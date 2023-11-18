@@ -1,1 +1,16 @@
 # Certification data
+
+- name: "Responsive Web Design"
+  date: 2023-08-21
+  link: "https://freecodecamp.org/certification/DanielTheFletch/responsive-web-design"
+  org: "freeCodeCamp"
+  skills:
+    - JavaScript
+    - ES6+
+- name: "JavaScript Algorithms and Data Structures"
+  date: 2023-09-17
+  link: "https://freecodecamp.org/certification/DanielTheFletch/javascript-algorithms-and-data-structures"
+  org: "freeCodeCamp"
+  skills:
+    - HTML
+    - CSS
