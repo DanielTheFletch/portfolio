@@ -4,6 +4,12 @@ title: Portfolio • Certifications
 
 <h1>Certifications</h1>
 
-{% for cert in site.data.certs %}
-  
-{% endfor %}
+<ul>
+  {% for cert in site.data.certifications %}
+    <li>
+      <p>{{ cert.name }}</p>
+      <p>Awarded by {{ cert.org }} on {{ cert.date | date_to_string }}</p>
+      <a href={{ cert.link }}>Certification credential</a>
+    </li>
+  {% endfor %}
+</ul>
