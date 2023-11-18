@@ -1,0 +1,23 @@
+# Profiles
+
+- platform:
+    name: "LinkedIn"
+    link: "https://www.linkedin.com/"
+  account:
+    name: "/in/DanielTheFletch"
+    link: "https://www.linkedin.com/in/DanielTheFletch"
+  active: true
+- platform:
+    name: "GitHub"
+    link: "https://www.github.com/"
+  account:
+    name: "@DanielTheFletch"
+    link: "https://www.github.com/DanielTheFletch"
+  active: true
+- platform:
+    name: "LeetCode"
+    link: "https://www.leetcode.com/"
+  account:
+    name: "@DanielTheFletch"
+    link: "https://www.leetcode.com/DanielTheFletch"
+  active: false

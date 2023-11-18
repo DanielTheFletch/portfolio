@@ -3,3 +3,17 @@ title: Portfolio • Profiles
 ---
 
 <h1>Profiles</h1>
+
+<ul>
+  {% for profile in site.data.profiles %}
+    <li>
+      <img alt="{{ profile.platform.name }} logo" src="#">
+      <a href={{ profile.account.link }}>{{ profile.account.name }}</a>
+      {% if profile.active %}
+        <p style="color: green;">Active</p>
+      {% else %}
+        <p style="color: red;">Inactive</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
