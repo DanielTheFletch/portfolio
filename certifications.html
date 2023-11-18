@@ -8,7 +8,7 @@ title: Portfolio • Certifications
   {% for cert in site.data.certifications %}
     <li>
       <p>{{ cert.name }}</p>
-      <p>Awarded by {{ cert.org }} on {{ cert.date | date_to_string }}</p>
+      <p>Awarded by <a href={{ cert.org.link }}>{{ cert.org.name }}</a> on {{ cert.date | date_to_string }}</p>
       <a href={{ cert.link }}>Certification credential</a>
     </li>
   {% endfor %}
