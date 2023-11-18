@@ -1,8 +1,6 @@
 # Collections
 collections:
   collections_dir: collections
-  certifications:
-    output: true
 
 # Default values for front matter
 defaults:
