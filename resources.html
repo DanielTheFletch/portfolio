@@ -3,3 +3,13 @@ title: Portfolio • Resources
 ---
 
 <h1>Resources</h1>
+
+<ul>
+  {% for resource in site.data.resources %}
+    <li>
+      <p>Organization: {{ resource.name }}</p>
+      <p>Link: {{ resource.link }}</p>
+      <p>{{ resource.blurb }}</p>
+    </li>
+  {% endfor %}
+</ul>
