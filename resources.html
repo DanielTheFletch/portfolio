@@ -8,7 +8,7 @@ title: Portfolio • Resources
   {% for resource in site.data.resources %}
     <li>
       <p>Organization: {{ resource.name }}</p>
-      <p>Link: {{ resource.link }}</p>
+      <p>Link: <a href={{ resource.link }}>Click Here</a></p>
       <p>{{ resource.blurb }}</p>
     </li>
   {% endfor %}
