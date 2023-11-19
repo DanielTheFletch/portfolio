@@ -1,0 +1,15 @@
+# Footer
+
+# Site information
+author: "Daniel Fletcher"
+date: "2023-11-19"
+version: 1.0.0
+
+# External links
+references:
+  - name: "LinkedIn"
+    link: "https://www.linkedin.com/in/danielthefletch"
+  - name: "GitHub"
+    link: "https://www.github.com/danielthefletch"
+  - name: "Site Repository"
+    link: "https://www.github.com/danielthefletch/portfolio"
