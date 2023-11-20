@@ -7,7 +7,7 @@ title: Portfolio • Activity
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href={{ site.baseurl }}{{ post.url }}>{{ post.title }}</a>
+      <a href={{ post.url | relative_url }}>{{ post.title }}</a>
       <p><em>{{ post.date | date_to_string }}</em></p>
       <p>{{ post.excerpt }}</p>
     </li>
