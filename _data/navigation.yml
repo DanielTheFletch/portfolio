@@ -3,12 +3,12 @@
 - name: About
   link: /
 - name: Activity
-  link: /activity.html
+  link: /activity
 - name: Certifications
-  link: /certifications.html
+  link: /certifications
 - name: Profiles
-  link: /profiles.html
+  link: /profiles
 - name: Projects
-  link: /projects.html
+  link: /projects
 - name: Resources
-  link: /resources.html
+  link: /resources
