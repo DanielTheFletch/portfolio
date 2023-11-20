@@ -1,4 +1,4 @@
 {% assign footer = site.data.footer %}
-<p>Copyright &copy; {{ footer.author }} {{ footer.date | slice: 0, 4 }}</p>
+<p>Copyright &copy; {{ footer.date | slice: 0, 4 }} {{ footer.author }}</p>
 <p>build v{{ footer.version }}</p>
 <p>last updated {{ footer.date | date_to_string }}</p>
