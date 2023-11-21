@@ -31,19 +31,19 @@ title: My Online Portfolio
   <ul>
     <li>
       <a href="mailto:dfletcher-mail@proton.me">
-        <i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;Email
+        <i class="fa-regular fa-envelope"> Email
       </a>
     </li>
     {% for contact in site.data.footer.references %}
       <li>
         <a href={{ contact.link }} target="_blank">
-          <i class="{{ contact.icon }}"></i>&nbsp;&nbsp;{{ contact.name }}
+          <i class="{{ contact.icon }}"></i> {{ contact.name }}
         </a>
       </li>
     {% endfor %}
     <li>
       <a href={{ "/profiles" | relative_url }}>
-        <i class="fa-solid fa-ellipsis"></i>&nbsp;&nbsp;See More
+        <i class="fa-solid fa-ellipsis"></i> See More
       </a>
     </li>
   </ul>
