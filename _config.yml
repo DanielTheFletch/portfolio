@@ -18,3 +18,7 @@ defaults:
 title: "Jekyll Test"
 url: "https://danielthefletch.github.io"
 baseurl: "/portfolio"
+
+# SASS configuration
+sass:
+  sass_dir: _sass

@@ -12,8 +12,8 @@ title: My Online Portfolio
 <section>
   <h2>About Me</h2>
   <div>
-    <img alt="Daniel gives a speech at his high school graduation ceremony." src="./assets/graduation_speech.jpg">
-    <img alt="Daniel poses against a wall wearing a professional getup." src="./assets/suit_no_tie.jpg">
+    <img alt="Daniel gives a speech at his high school graduation ceremony." src="./assets/img/graduation_speech.jpg">
+    <img alt="Daniel poses against a wall wearing a professional getup." src="./assets/img/suit_no_tie.jpg">
   </div>
   <p>My name is Daniel Fletcher, and I have lived in Tallahassee, FL for my entire life! I graduated from Leon High School in 2019, from which I promptly attended Florida State University where I attained a degree in computer science. In December 2022, I graduated from FSU with a Bachelor of Science degree.</p>
   <p></p>
@@ -28,23 +28,15 @@ title: My Online Portfolio
 <!-- Primary contact -->
 <section>
   <h2>Get Connected</h2>
-  <ul>
-    <li>
-      <a href="mailto:dfletcher-mail@proton.me">
-        <i class="fa-regular fa-envelope"> Email
-      </a>
-    </li>
-    {% for contact in site.data.footer.references %}
-      <li>
-        <a href={{ contact.link }} target="_blank">
-          <i class="{{ contact.icon }}"></i> {{ contact.name }}
-        </a>
-      </li>
-    {% endfor %}
-    <li>
-      <a href={{ "/profiles" | relative_url }}>
-        <i class="fa-solid fa-ellipsis"></i> See More
-      </a>
-    </li>
-  </ul>
+  <a href="mailto:dfletcher-mail@proton.me">
+    <i class="fa-regular fa-envelope"> Email
+  </a>
+  {% for contact in site.data.footer.references %}
+    <a href={{ contact.link }} target="_blank">
+      <i class="{{ contact.icon }}"></i> {{ contact.name }}
+    </a>
+  {% endfor %}
+  <a href={{ "/profiles" | relative_url }}>
+    <i class="fa-solid fa-ellipsis"></i> See More
+  </a>
 </section>

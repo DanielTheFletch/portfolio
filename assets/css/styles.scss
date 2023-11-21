@@ -2,4 +2,5 @@
 ---
 
 /* Global stylesheet for importing others */
-/* @import main */
+@import "bootstrap/bootstrap";
+@import "main";
