@@ -16,7 +16,7 @@ code in this repository.
 ## My portfolio, at a glance
 
 My portfolio website is divided into six main sections:
-- **[About](#)** &ndash; Learn about me, both personally and professionally. You can also find my primary contact information here, as well as this same brief summary of the portfolio site.
+- **[About](#)** &ndash; Learn about me, both personally and professionally. You can also find my primary contact information here, as well as a select few featured projects and activity posts.
 - **[Activity](#)** &ndash; A blog of sorts that also serves as a changelog for my portfolio. I plan to add posts here any time I update the site, whether that be adding new projects, implementing new features, or working in bug fixes.
 - **[Certifications](#)** &ndash; Check out all of the certifications I have earned so far in my computer science journey, complete with links to the certifications themselves.
 - **[Profiles](#)** &ndash; Interested in my online presence beyond my primary contact info? Look no further! All of my relevant online profiles are listed here, along with an indication as to whether I am currently active for each profile.
