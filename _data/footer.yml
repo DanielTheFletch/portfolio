@@ -9,7 +9,10 @@ version: 1.0.0
 references:
   - name: "LinkedIn"
     link: "https://www.linkedin.com/in/danielthefletch"
+    icon: "fa-brands fa-linkedin"
   - name: "GitHub"
     link: "https://www.github.com/danielthefletch"
+    icon: "fa-brands fa-github"
   - name: "Site Repository"
     link: "https://www.github.com/danielthefletch/portfolio"
+    icon: "fa-solid fa-code-compare"
