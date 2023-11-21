@@ -27,16 +27,7 @@ title: My Online Portfolio
 
 <!-- Primary contact -->
 <section>
-  <h2>Get Connected</h2>
-  <a href="mailto:dfletcher-mail@proton.me">
-    <i class="fa-regular fa-envelope"> Email
-  </a>
-  {% for contact in site.data.footer.references %}
-    <a href={{ contact.link }} target="_blank">
-      <i class="{{ contact.icon }}"></i> {{ contact.name }}
-    </a>
-  {% endfor %}
-  <a href={{ "/profiles" | relative_url }}>
-    <i class="fa-solid fa-ellipsis"></i> See More
+  <a class="btn btn-primary" href="#">
+    <i class="fa-brands fa-linkedin"></i> LinkedIn
   </a>
 </section>
