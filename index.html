@@ -3,26 +3,36 @@ title: My Online Portfolio
 ---
 
 <!-- Hero -->
-<h1>Daniel Fletcher</h1>
-<p>Some portfolio subtitle.</p>
+<div>
+  <h1>Daniel Fletcher</h1>
+  <p>Software Engineer • Lifelong Learner • Aspiring Video Game Developer & Designer</p>
+</div>
 
 <!-- Personal summary -->
 <section>
   <h2>About Me</h2>
-  <p>image1</p>
-  <p>image2</p>
-  <p>image3</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ex itaque exercitationem tenetur optio! Fuga porro hic quam et laborum, pariatur minima accusantium? Deleniti ratione repudiandae iusto minima ab fugiat?</p>
+  <div>
+    <img alt="" src="">
+    <img alt="" src="">
+    <img alt="" src="">
+  </div>
+  <p>My name is Daniel Fletcher, and I have lived in Tallahassee, FL for my entire life! I graduated from Leon High School in 2019, from which I promptly attended Florida State University where I attained a degree in computer science. In December 2022, I graduated from FSU with a Bachelor of Science degree.</p>
+  <p></p>
 </section>
 
 <!-- Site summary -->
+{% assign sections = site.data.navigation %}
 <section>
   <h2>My Portfolio</h2>
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis voluptas necessitatibus iusto ipsam quia quibusdam deserunt reiciendis velit ipsum id officia minima sunt assumenda, quas blanditiis nam accusamus error maiores.</p>
-  <a href="#">link1</a>
-  <a href="#">link2</a>
-  <a href="#">link3</a>
-  <a href="#">link4</a>
+  <p>My portfolio website is divided into six main sections:</p>
+  <ul>
+    <li><a href="#">About</a> &ndash; Learn about me, both personally and professionally. You can also find my primary contact information here, as well as this brief summary you're currently reading!</li>
+    <li><a href="#">Activity</a> &ndash; A blog of sorts that also serves as a changelog for my portfolio. I plan to add posts here any time I update the site, whether that be adding new projects, implementing new features, or working in bug fixes.</li>
+    <li><a href="#">Certifications</a> &ndash; Check out all of the certifications I have earned so far in my computer science journey, complete with links to the certifications themselves.</li>
+    <li><a href="#">Profiles</a> &ndash; Interested in my online presence beyond my primary contact info? Look no further! All of my relevant online profiles are listed here, along with an indication as to whether I am currently active for each profile.</li>
+    <li><a href="#">Projects</a> &ndash; Take a look at the myriad of projects I have worked on, ranging from academic submissions for Harvard to personal passion projects. This page contains a rotating selection of three featured projects and a comprehensive list of all my past projects.</li>
+    <li><a href="#">Resources</a> &ndash; Look into some of the *incredible* resources that have helped me get to where I am now. All relevant links included.</li>
+  </ul>
 </section>
 
 <!-- Primary contact -->
