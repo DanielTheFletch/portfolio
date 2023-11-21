@@ -19,21 +19,20 @@ title: My Online Portfolio
   <p></p>
 </section>
 
-<!-- Featured projects -->
-<section>
-  <h2>Featured Projects</h2>
-</section>
-
 <!-- Recent activity -->
 <section>
   <h2>Recent Activity</h2>
+  <!-- Add latest activity post here -->
 </section>
 
 <!-- Primary contact -->
 <section>
   <h2>Get Connected</h2>
-  <a href="#">link1</a>
-  <a href="#">link2</a>
-  <a href="#">link3</a>
-  <a href="#">link4</a>
+  <a href="mailto:dfletcher-mail@proton.me">Email</a>
+  {% for contact in site.data.footer.references %}
+    <a href={{ contact.link }} target="_blank">
+      {{ contact.name }}
+    </a>
+  {% endfor %}
+  <a href={{ "/profiles" | relative_url }}>See More</a>
 </section>
