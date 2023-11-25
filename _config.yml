@@ -21,4 +21,4 @@ baseurl: "/portfolio"
 
 # SASS configuration
 sass:
-  sass_dir: {{ "_sass" | prepend: baseurl }}
+  sass_dir: "/_sass"
