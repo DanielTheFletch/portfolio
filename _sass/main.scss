@@ -7,12 +7,22 @@
 }
 
 
-/* Bootstrap tweaks */
+/* Navigation */
 .navbar-brand {
     text-shadow: 0.1rem 0.1rem 0.25rem $black;
 }
 
 .active, .inactive:hover {
     border-bottom: 0.125rem ridge $white;
-    text-shadow: 0.1rem 0.1rem 0.25rem $black;
+    text-shadow: 0.05rem 0.05rem 0.175rem $black;
+}
+
+
+/* Foregrounds and backgrounds */
+.bg-black {
+    background-color: $black;
+}
+
+.fg-white {
+    color: white;
 }

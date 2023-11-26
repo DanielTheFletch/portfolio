@@ -1,32 +1,44 @@
 ---
-title: My Online Portfolio
+title: Portfolio • Daniel Fletcher
+heading: h2 fw-bold mt-4 mb-3
 ---
 
 <!-- Hero -->
-<div>
-  <h1>Daniel Fletcher</h1>
-  <p>Software Engineer • Lifelong Learner • Aspiring Video Game Developer & Designer</p>
-</div>
-
-<!-- Personal summary -->
-<section>
-  <h2>About Me</h2>
-  <div>
-    <img alt="Daniel gives a speech at his high school graduation ceremony." src="./assets/img/graduation_speech.jpg">
-    <img alt="Daniel poses against a wall wearing a professional getup." src="./assets/img/suit_no_tie.jpg">
+<section class="container-fluid mx-0 px-0" id="hero-landing-page">
+  <div class="bg-black fg-white d-flex flex-column align-items-center justify-content-center min-vh-100 mh-100 w-100">
+    <h1 class="align-middle h1 fw-bold">Daniel Fletcher</h1>
+    <p class="align-middle fst-italic">Software Engineer • Aspiring Game Developer</p>
   </div>
-  <p>My name is Daniel Fletcher, and I have lived in Tallahassee, FL for my entire life! I graduated from Leon High School in 2019, from which I promptly attended Florida State University where I attained a degree in computer science. In December 2022, I graduated from FSU with a Bachelor of Science degree.</p>
-  <p></p>
 </section>
 
 <!-- Recent activity -->
-<section>
-  <h2>Recent Activity</h2>
+<section class="container-fluid" id="recent-activity">
+  <h2 class="{{ page.heading }}">Recent Activity</h2>
   <!-- Add latest activity post here -->
 </section>
 
+<!-- Personal summary -->
+<section class="container-fluid" id="about-me">
+  <h2 class="{{ page.heading }}">About Me</h2>
+  <div class="container-fluid mx-0 px-0">
+    <div class="row row-cols-2">
+      <div class="col">
+        <p>My name is Daniel Fletcher, and I have lived in Tallahassee, FL for my entire life! I graduated from Leon High School in 2019, from which I promptly attended Florida State University where I attained a degree in computer science. In December 2022, I graduated from FSU with a Bachelor of Science degree.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium velit, omnis iure laborum consequatur sint rem eaque numquam maxime eveniet at autem officia eligendi repudiandae nostrum maiores expedita accusamus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores in fuga sequi voluptas quam, aut et magni ratione esse voluptates sunt obcaecati. Ratione praesentium minima et obcaecati debitis quia accusamus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptate autem atque ipsum architecto eius quibusdam eligendi nulla error porro sunt culpa, sapiente totam neque? Ullam voluptas consequuntur vel quasi?</p>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <img class="img-flex ratio rounded w-75" src="./assets/img/suit_no_tie.jpg" />
+      </div>
+    </div>
+  </div>
+  <p></p>
+</section>
+
 <!-- Primary contact -->
-<section>
+<section class="container-fluid bg-black fg-white" id="contact-info">
+  <h2 class="{{ page.heading }}">Let's Get Connected</h2>
   <a class="btn btn-primary" href="#">
     <i class="fa-brands fa-linkedin"></i> LinkedIn
   </a>
