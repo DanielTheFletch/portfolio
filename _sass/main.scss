@@ -1,1 +1,18 @@
-/* TODO */
+/* Main custom styles */
+
+
+/* General properties */
+* {
+    box-sizing: border-box;
+}
+
+
+/* Bootstrap tweaks */
+.navbar-brand {
+    text-shadow: 0.1rem 0.1rem 0.25rem $black;
+}
+
+.active, .inactive:hover {
+    border-bottom: 0.125rem ridge $white;
+    text-shadow: 0.1rem 0.1rem 0.25rem $black;
+}

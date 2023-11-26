@@ -1,9 +1,9 @@
 <!-- Bootstrap style navbar -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-primary">
   <div class="container-fluid">
 
     <!-- Navbar title and collapse toggle for responsiveness -->
-    <span class="navbar-brand mb-0 h1">Daniel's Online Portfolio</span>
+    <span class="navbar-brand text-white fw-bolder mb-0 h1">Daniel's Online Portfolio</span>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -14,13 +14,13 @@
 
         <!-- Add each button and correctly label current page -->
         {% for item in site.data.navigation %}
-            <li class="nav-item">
+            <li class="nav-item mx-lg-2">
               {% if page.url == item.link %}
-                <a href={{ item.link | relative_url }} class="nav-link active" aria-current="page">
+                <a href="#" class="nav-link active text-white" aria-current="page">
                   {{ item.name }}
                 </a>
               {% else %}
-                <a href={{ item.link | relative_url }} class="nav-link">
+                <a href={{ item.link | relative_url }} class="nav-link inactive text-white">
                   {{ item.name }}
                 </a>
               {% endif %}
