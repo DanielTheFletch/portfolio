@@ -1,17 +1,20 @@
-# Footer
+# Development information
 
-# Site information
+# Site metadata
 author: "Daniel Fletcher"
 date: "2023-11-19"
 version: 1.0.0
 
-# External links
-references:
+# Contact information
+contact:
+  - name: "Email"
+    link: "mailto:dfletcher-mail@proton.me"
+    icon: "fa-solid fa-envelope"
   - name: "LinkedIn"
-    link: "https://www.linkedin.com/in/danielthefletch"
+    link: "https://www.linkedin.com/in/DanielTheFletch"
     icon: "fa-brands fa-linkedin"
   - name: "GitHub"
-    link: "https://www.github.com/danielthefletch"
+    link: "https://www.github.com/DanielTheFletch"
     icon: "fa-brands fa-github"
   - name: "Site Repository"
     link: "https://www.github.com/danielthefletch/portfolio"
