@@ -1,9 +1,13 @@
 /* SCSS variables and Bootstrap overrides */
 
 // Named color overrides
-$black:         #0D0C1D;
+$black:             #0D0C1D;
 
 // Color theme overrides
-$primary:       #8C001A;
-$secondary:     #990033;
-$link-color:    #2274A5;
+$primary:           #8C001A;
+$secondary:         #990033;
+$link-color:        #2274A5;
+
+// Fonts
+$poppins:           "Poppins", serif;
+$titillium-web:     "Titillium Web", sans-serif;

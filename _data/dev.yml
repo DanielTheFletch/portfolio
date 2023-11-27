@@ -16,6 +16,6 @@ contact:
   - name: "GitHub"
     link: "https://www.github.com/DanielTheFletch"
     icon: "fa-brands fa-github"
-  - name: "Site Repository"
+  - name: "Repository"
     link: "https://www.github.com/danielthefletch/portfolio"
     icon: "fa-solid fa-code-compare"

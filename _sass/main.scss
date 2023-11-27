@@ -1,9 +1,14 @@
-/* Main custom styles */
+/* Main stylesheet */
 
 
-/* General properties */
 * {
     box-sizing: border-box;
+    font-family: $poppins;
+}
+
+section {
+    padding-bottom: $spacer;
+    padding-top: ($spacer * 1.5);
 }
 
 
@@ -25,4 +30,28 @@
 
 .fg-white {
     color: white;
+}
+
+
+/* Primary contact info */
+.contact-item {
+    color: $white;
+    font-family: $titillium-web;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    text-decoration: none;
+    
+    transition-duration: 0.25s;
+    transition-property: color, border-bottom;
+    transition-timing-function: ease-out;
+}
+
+.contact-item:hover {
+    border-bottom: 0.275rem groove $link-color;
+    border-radius: 0.25rem;
+    color: $link-color;
+
+    transition-duration: 0.25s;
+    transition-property: color, border-bottom;
+    transition-timing-function: ease-in;
 }
