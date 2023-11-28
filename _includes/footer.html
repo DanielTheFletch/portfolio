@@ -1,4 +1,31 @@
-{% assign footer = site.data.footer %}
-<p>Copyright &copy; {{ footer.date | slice: 0, 4 }} {{ footer.author }}</p>
-<p>build v{{ footer.version }}</p>
-<p>last updated {{ footer.date | date_to_string }}</p>
+<div class="container-fluid bg-secondary fg-white border-top border-primary border-3 h-auto px-3 py-5">
+  <div class="row">
+    <div class="col text-start" id="footer-site-info">
+      <ul class="footer-item-list">
+        <span class="footer-title">&copy; 2023 Daniel Fletcher</span>
+        <li class="footer-item">Licensed under <a class="footer-link" href="#">MIT License</a></li>
+        <li class="footer-item">Daniel's Online Portfolio • v1.0.0</li>
+      </ul>
+    </div>
+    <div class="col text-start" id="footer-site-links">
+      <ul class="footer-item-list">
+        <span class="footer-title">Links</span>
+        {% for item in site.data.navigation %}
+          <li class="footer-item">
+            <a href={{ item.link | relative_url }} class="footer-link">
+              {{ item.name }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col" id="footer-technology">
+      <p class="footer-title">Technology Used</p>
+      <p>placeholder</p>
+    </div>
+    <div class="col" id="footer-contact">
+      <p class="footer-title">Contact</p>
+      <p>placeholder</p>
+    </div>
+  </div>
+</div>

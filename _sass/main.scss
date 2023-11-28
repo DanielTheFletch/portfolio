@@ -12,7 +12,7 @@ section {
 }
 
 
-/* Navigation */
+/* Navigation and footer */
 .navbar-brand {
     text-shadow: 0.1rem 0.1rem 0.25rem $black;
 }
@@ -20,6 +20,27 @@ section {
 .active, .inactive:hover {
     border-bottom: 0.125rem ridge $white;
     text-shadow: 0.05rem 0.05rem 0.175rem $black;
+}
+
+.footer-item {
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-item-list {
+    list-style-position: outside;
+    list-style-type: none;
+}
+
+.footer-link {
+    color: $white;
+    text-decoration: none;
+}
+
+.footer-link:hover, .footer-link:active {
+    color: $link-color;
+    text-decoration: underline;
 }
 
 
