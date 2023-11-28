@@ -1,15 +1,21 @@
-<div class="container-fluid bg-secondary fg-white border-top border-primary border-3 h-auto px-3 py-5">
+<div class="container-fluid bg-secondary-subtle border-top border-primary border-3 h-auto mb-0 px-3 py-5">
   <div class="row">
-    <div class="col text-start" id="footer-site-info">
+
+    <!-- Site information -->
+    <div class="col-5 text-start" id="footer-site-info">
       <ul class="footer-item-list">
-        <span class="footer-title">&copy; 2023 Daniel Fletcher</span>
-        <li class="footer-item">Licensed under <a class="footer-link" href="#">MIT License</a></li>
-        <li class="footer-item">Daniel's Online Portfolio • v1.0.0</li>
+        <span class="footer-title-info">&copy; 2023 Daniel Fletcher</span>
+        <li class="footer-item-info">Code and content licensed under <a class="footer-link" href="#">MIT License</a>.</li>
+        <li class="footer-item-info">Portfolio site currently v1.0.0.</li>
+        <li class="footer-item-info">Code available on site's GitHub Repo.</li>
+        <li class="footer-item-info">Website hosted on GitHub Pages.</li>
       </ul>
     </div>
-    <div class="col text-start" id="footer-site-links">
+
+    <!-- Site links (same as navigation) -->
+    <div class="col" id="footer-site-links">
       <ul class="footer-item-list">
-        <span class="footer-title">Links</span>
+        <span class="footer-title">Site Links</span>
         {% for item in site.data.navigation %}
           <li class="footer-item">
             <a href={{ item.link | relative_url }} class="footer-link">
@@ -19,13 +25,34 @@
         {% endfor %}
       </ul>
     </div>
+
+    <!-- Technology used -->
     <div class="col" id="footer-technology">
-      <p class="footer-title">Technology Used</p>
-      <p>placeholder</p>
+      <ul class="footer-item-list">
+        <span class="footer-title">Technologies Used</span>
+        {% for item in site.data.footer.technology %}
+          <li class="footer-item">
+            <a href={{ item.link | relative_url }} class="footer-link">
+              {{ item.name }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
+
+    <!-- Contact information -->
     <div class="col" id="footer-contact">
-      <p class="footer-title">Contact</p>
-      <p>placeholder</p>
+      <ul class="footer-item-list">
+        <span class="footer-title">Primary Contact</span>
+        {% for item in site.data.footer.contact %}
+          <li class="footer-item">
+            <a href={{ item.link | relative_url }} class="footer-link">
+              {{ item.name }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
+
   </div>
 </div>

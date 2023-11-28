@@ -1,9 +1,31 @@
-# Development information
+# Footer data
 
-# Site metadata
-author: "Daniel Fletcher"
-date: "2023-11-19"
-version: 1.0.0
+# Site information
+site-info:
+  author: "Daniel Fletcher"
+  date: "2023-11-19"
+  version: 1.0.0
+  host:
+    name: "GitHub Pages"
+    link: "#"
+
+# Site links
+# [ included in navigation.html ]
+
+# Technology used
+technology:
+  - name: "Jekyll"
+    link: "#"
+  - name: "Liquid"
+    link: "#"
+  - name: "HTML"
+    link: "#"
+  - name: "CSS"
+    link: "#"
+  - name: "SASS / SCSS"
+    link: "#"
+  - name: "Ruby"
+    link: "#"
 
 # Contact information
 contact:
