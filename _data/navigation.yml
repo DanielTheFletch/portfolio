@@ -1,13 +1,13 @@
 # Navbar data
 
-- name: About
+- name: Home
   link: /
 - name: Activity
   link: /activity
-- name: Certifications
-  link: /certifications
-- name: Profiles
-  link: /profiles
+- name: Credentials
+  link: /credentials
+- name: Links
+  link: /links
 - name: Projects
   link: /projects
 - name: Resources
