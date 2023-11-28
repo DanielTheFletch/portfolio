@@ -31,21 +31,26 @@ heading: h2 fw-bold pb-3
 
 <!-- Contact information -->
 <section class="container-fluid bg-black fg-white pb-3" id="contact-info">
-  <h2 class="{{ page.heading }}">Let's Get Connected</h2>
+  <h2 class="{{ page.heading }}">Contact Information</h2>
   <div class="container text-center">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
+    <div class="row row-cols-1">
+      <div class="col mb-0">
+        <p class="h3 fst-italic fw-bold">How would you like to connect?</p>
+      </div>
+    </div>
+    <div class="row row-cols-1">
+      <div class="col mt-0">
+        <p class="fw-lighter">Note: Links will open in a new tab.</p>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 my-2">
       {% for item in site.data.footer.contact %}
-        <div class="col">
+        <div class="col my-2">
           <a class="contact-item contact-item-large" href={{ item.link }} target="_blank">
             <i class="{{ item.icon }}"></i> {{ item.name }}
           </a>
         </div>
       {% endfor %}
-    </div>
-    <div class="row row-cols-1">
-      <div class="col gy-4">
-        <p>For more contact information, visit the <a href={{ "/profiles" | relative_url }}>Profiles</a> page of the portfolio.</p>
-      </div>
     </div>
   </div>
 </section>
