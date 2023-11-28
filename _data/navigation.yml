@@ -1,14 +1,19 @@
-# Navbar data
-
+# Navigation data for site's main pages
 - name: Home
   link: /
+  icon: "fa-solid fa-house"
 - name: Activity
   link: /activity
+  icon: "fa-solid fa-pen-to-square"
 - name: Credentials
   link: /credentials
+  icon: "fa-solid fa-graduation-cap"
 - name: Links
   link: /links
+  icon: "fa-solid fa-link"
 - name: Projects
   link: /projects
+  icon: "fa-solid fa-file-code"
 - name: Resources
   link: /resources
+  icon: "fa-solid fa-globe"

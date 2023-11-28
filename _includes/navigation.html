@@ -17,11 +17,11 @@
             <li class="nav-item mx-lg-2">
               {% if page.url == item.link %}
                 <a href="#" class="nav-link active text-white" aria-current="page">
-                  {{ item.name }}
+                  <i class="{{ item.icon }}"></i>&nbsp;&nbsp;{{ item.name }}
                 </a>
               {% else %}
                 <a href={{ item.link | relative_url }} class="nav-link inactive text-white">
-                  {{ item.name }}
+                  <i class="{{ item.icon }}"></i>&nbsp;&nbsp;{{ item.name }}
                 </a>
               {% endif %}
             </li>
