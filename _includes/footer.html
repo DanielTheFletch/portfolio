@@ -1,8 +1,8 @@
 <div class="container-fluid bg-secondary-subtle border-top border-primary border-3 h-auto mb-0 px-3 py-5">
-  <div class="row">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 text-center text-md-start">
 
     <!-- Site information -->
-    <div class="col-5 text-start" id="footer-site-info">
+    <div class="col col-xl-5 my-2" id="footer-site-info">
       <ul class="footer-item-list">
         <span class="footer-title-info">&copy; 2023 Daniel Fletcher</span>
         <li class="footer-item-info">Code and content licensed under <a class="footer-link" href="#">MIT License</a>.</li>
@@ -13,7 +13,7 @@
     </div>
 
     <!-- Site links (same as navigation) -->
-    <div class="col" id="footer-site-links">
+    <div class="col col-xl-2 my-2" id="footer-site-links">
       <ul class="footer-item-list">
         <span class="footer-title">Site Links</span>
         {% for item in site.data.navigation %}
@@ -27,7 +27,7 @@
     </div>
 
     <!-- Technology used -->
-    <div class="col" id="footer-technology">
+    <div class="col col-xl-2 my-2" id="footer-technology">
       <ul class="footer-item-list">
         <span class="footer-title">Technologies Used</span>
         {% for item in site.data.footer.technology %}
@@ -41,7 +41,7 @@
     </div>
 
     <!-- Contact information -->
-    <div class="col" id="footer-contact">
+    <div class="col col-xl-2 my-2" id="footer-contact">
       <ul class="footer-item-list">
         <span class="footer-title">Primary Contact</span>
         {% for item in site.data.footer.contact %}
