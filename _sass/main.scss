@@ -45,7 +45,11 @@ section {
     text-decoration: none;
 }
 
-.footer-link:hover, .footer-link:active {
+.footer-link-info {
+    color: $black;
+}
+
+.footer-link:hover, .footer-link:active, .footer-link-info:hover, .footer-link-info:active {
     color: $link-color;
     text-decoration: underline;
 }

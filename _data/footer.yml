@@ -2,11 +2,23 @@
 
 # Site information
 site-info:
-  author: "Daniel Fletcher"
-  date: "2023-11-19"
-  version: 1.0.0
+  author: 
+    prefix: "&copy; 2023"
+    phrase: "Daniel Fletcher"
+  version:
+    prefix: "Daniel's Online Portfolio"
+    phrase: 1.0.0
+  license:
+    prefix: "Site licensed under"
+    phrase: "MIT License"
+    link: "#"
+  repository:
+    prefix: "Code available on"
+    phrase: "site GitHub Repository"
+    link: "#"
   host:
-    name: "GitHub Pages"
+    prefix: "Hosted on"
+    phrase: "GitHub Pages"
     link: "#"
 
 # Site links
