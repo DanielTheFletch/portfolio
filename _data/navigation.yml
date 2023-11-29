@@ -3,17 +3,17 @@
   link: /
   icon: "fa-solid fa-house"
 - name: Activity
-  link: /activity
+  link: /activity/
   icon: "fa-solid fa-pen-to-square"
 - name: Credentials
-  link: /credentials
+  link: /credentials/
   icon: "fa-solid fa-graduation-cap"
 - name: Links
-  link: /links
+  link: /links/
   icon: "fa-solid fa-link"
 - name: Projects
-  link: /projects
+  link: /projects/
   icon: "fa-solid fa-file-code"
 - name: Resources
-  link: /resources
+  link: /resources/
   icon: "fa-solid fa-globe"

@@ -1,5 +1,6 @@
 ---
 title: Introducing Daniel's Online Portfolio Website
+slug: introducing-daniels-online-portfolio-website
 first-letter: L
 ---
 

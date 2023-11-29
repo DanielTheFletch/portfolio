@@ -2,6 +2,9 @@
 collections:
   collections_dir: collections
 
+# Default permalink for main pages
+permalink: "/:name/"
+
 # Default values for front matter
 defaults:
   - scope:
@@ -9,6 +12,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      permalink: "/activity/posts/:year/:month/:title/"
   - scope:
       path: {{ baseurl }}
     values:
