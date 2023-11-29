@@ -1,16 +1,28 @@
 ---
-permalink: /activity
 title: Recent Activity
+permalink: /activity
+subheading: "h2 fw-bold pb-3"
 ---
 
-<h1>Activity</h1>
+<!-- Page heading -->
+<div class="container-fluid bg-black fg-white mb-2 py-4">
+  <h1 class="h1 fw-bold text-center">Recent Activity</h1>
+</div>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href={{ post.url | relative_url }}>{{ post.title }}</a>
-      <p><em>{{ post.date | date_to_string }}</em></p>
-      <p>{{ post.excerpt }}</p>
-    </li>
-  {% endfor %}
-</ul>
+<!-- Activity posts -->
+<div class="container-fluid mb-5 pb-5">
+  <h2 class="{{ page.subheading }}">Posts</h2>
+  {% assign latest = site.posts | first %}
+  <div class="container">
+    <h3>{{ latest.title }}</h3>
+    <p class="fw-lighter">{{ latest.date | date_to_string }}</p>
+    <p>{{ latest.excerpt }}</p>
+    <i class="fa-solid fa-ellipsis"></i>
+  </div>
+</div>
+
+<!-- Coming soon -->
+<div class="container-fluid mb-5 pb-5">
+  <h2 class="{{ page.subheading }}">Coming Soon</h2>
+  <p class="mb-5 pb-5">After future activity posts have been made, this section will become home to all past posts except the most recent. The above section will then become home to only the most recent post.</p>
+</div>
