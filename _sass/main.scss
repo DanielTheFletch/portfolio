@@ -69,13 +69,18 @@ section {
 }
 
 
-/* Foregrounds and backgrounds */
+/* General color theming */
 .bg-black {
     background-color: $black;
 }
 
 .fg-white {
     color: white;
+}
+
+.page-heading {
+    border-bottom: 0.6rem groove $periwinkle;
+    border-top: 0.6rem ridge $primary;
 }
 
 
@@ -113,4 +118,13 @@ section {
 
 .activity-post:hover, .activity-post:active {
     background-color: $platinum;
+}
+
+.activity-post-first-letter {
+    float: left;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 0.9em;
+    margin-left: 0;
+    margin-right: 0.225em;
 }
