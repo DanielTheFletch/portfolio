@@ -11,15 +11,15 @@ site-info:
   license:
     prefix: "Site licensed under"
     phrase: "MIT License"
-    link: "#"
+    link: "https://en.wikipedia.org/wiki/MIT_License"
   repository:
     prefix: "Code available on"
     phrase: "site GitHub Repository"
-    link: "#"
+    link: "https://github.com/DanielTheFletch/portfolio"
   host:
     prefix: "Hosted on"
     phrase: "GitHub Pages"
-    link: "#"
+    link: "https://docs.github.com/en/pages"
 
 # Site links
 # [ included in navigation.html ]
@@ -27,17 +27,17 @@ site-info:
 # Technology used
 technology:
   - name: "Jekyll"
-    link: "#"
+    link: "https://jekyllrb.com/"
   - name: "Liquid"
-    link: "#"
+    link: "https://liquidjs.com/tutorials/intro-to-liquid.html"
   - name: "HTML"
-    link: "#"
+    link: "https://developer.mozilla.org/en-US/docs/Web/HTML"
   - name: "CSS"
-    link: "#"
+    link: "https://developer.mozilla.org/en-US/docs/Web/CSS"
   - name: "SASS / SCSS"
-    link: "#"
+    link: "https://sass-lang.com/"
   - name: "Ruby"
-    link: "#"
+    link: "https://www.ruby-lang.org/en/"
 
 # Contact information
 contact:
@@ -51,5 +51,5 @@ contact:
     link: "https://www.github.com/DanielTheFletch"
     icon: "fa-brands fa-github"
   - name: "See More"
-    link: "/portfolio/links"
+    link: "/links"
     icon: "fa-solid fa-circle-info"
