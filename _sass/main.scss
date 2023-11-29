@@ -101,3 +101,16 @@ section {
     transition-property: color, border-bottom;
     transition-timing-function: ease-in;
 }
+
+
+/* Activity posts */
+.activity-post {
+    background-color: $periwinkle;
+    border: 0.25em solid $black;
+    border-radius: 0.75em;
+    padding: 2em;
+}
+
+.activity-post:hover, .activity-post:active {
+    background-color: $platinum;
+}

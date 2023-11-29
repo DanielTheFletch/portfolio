@@ -13,7 +13,8 @@ subheading: "h2 fw-bold pb-3"
 <div class="container-fluid mb-5 pb-5">
   <h2 class="{{ page.subheading }}">Posts</h2>
   {% assign latest = site.posts | first %}
-  <div class="container">
+  <div class="container position-relative activity-post">
+    <a class="stretched-link" href={{ latest.url | relative_url }}></a>
     <h3>{{ latest.title }}</h3>
     <p class="fw-lighter">{{ latest.date | date_to_string }}</p>
     <p>{{ latest.excerpt }}</p>
