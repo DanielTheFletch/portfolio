@@ -14,12 +14,12 @@ section {
 
 /* Navigation and footer */
 .navbar-brand {
-    text-shadow: 0.1rem 0.1rem 0.25rem $black;
+    text-shadow: 0.1rem 0.1rem 0.25rem $dark;
 }
 
 .active, .inactive:hover {
-    border-bottom: 0.125rem ridge $white;
-    text-shadow: 0.05rem 0.05rem 0.175rem $black;
+    border-bottom: 0.125rem ridge $light;
+    text-shadow: 0.05rem 0.05rem 0.175rem $dark;
 }
 
 .footer-item {
@@ -50,7 +50,7 @@ section {
 }
 
 .footer-link:hover, .footer-link:active, .footer-link-info:hover, .footer-link-info:active {
-    color: $link-color;
+    color: $primary;
     text-decoration: underline;
 }
 
@@ -70,23 +70,23 @@ section {
 
 
 /* General color theming */
-.bg-black {
-    background-color: $black;
+.bg-dark {
+    background-color: $dark;
 }
 
-.fg-white {
-    color: white;
+.fg-light {
+    color: $light;
 }
 
 .page-heading {
-    border-bottom: 0.6rem groove $periwinkle;
+    border-bottom: 0.6rem groove $white;
     border-top: 0.6rem ridge $primary;
 }
 
 
 /* Primary contact info */
 .contact-item {
-    color: $white;
+    color: $light;
     font-family: $titillium-web;
     font-size: 2.3rem;
     font-weight: bolder;
@@ -98,9 +98,9 @@ section {
 }
 
 .contact-item:hover {
-    border-bottom: 0.275rem groove $link-color;
+    border-bottom: 0.275rem groove $secondary;
     border-radius: 0.25rem;
-    color: $link-color;
+    color: $secondary;
 
     transition-duration: 0.25s;
     transition-property: color, border-bottom;
@@ -110,14 +110,14 @@ section {
 
 /* Activity posts */
 .activity-post {
-    background-color: $periwinkle;
-    border: 0.25em solid $black;
+    background-color: $secondary;
+    border: 0.25em solid $dark;
     border-radius: 0.75em;
     padding: 2em;
 }
 
 .activity-post:hover, .activity-post:active {
-    background-color: $platinum;
+    background-color: $tertiary;
 }
 
 .activity-post-first-letter {
