@@ -12,7 +12,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      permalink: "/activity/posts/:year/:month/:title/"
+      permalink: "/activity/posts/:year/:title/"
   - scope:
       path: {{ baseurl }}
     values:

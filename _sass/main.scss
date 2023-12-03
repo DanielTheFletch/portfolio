@@ -17,8 +17,13 @@ section {
     text-shadow: 0.1rem 0.1rem 0.25rem $dark;
 }
 
+.nav-link {
+    border-bottom: 0.125rem solid $primary;
+    border-top: 0.125rem solid $primary;
+}
+
 .active, .inactive:hover {
-    border-bottom: 0.125rem ridge $light;
+    border-bottom: 0.125rem ridge $white;
     text-shadow: 0.05rem 0.05rem 0.175rem $dark;
 }
 
