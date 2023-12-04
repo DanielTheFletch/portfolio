@@ -103,9 +103,9 @@ section {
 }
 
 .contact-item:hover {
-    border-bottom: 0.275rem groove $secondary;
+    border-bottom: 0.275rem groove $tertiary;
     border-radius: 0.25rem;
-    color: $secondary;
+    color: $tertiary;
 
     transition-duration: 0.25s;
     transition-property: color, border-bottom;
