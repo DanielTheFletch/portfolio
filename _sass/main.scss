@@ -119,10 +119,12 @@ section {
     border: 0.25em solid $dark;
     border-radius: 0.75em;
     padding: 2em;
+    transition: background-color 0.125s linear;
 }
 
 .activity-post:hover, .activity-post:active {
     background-color: $tertiary;
+    transition: background-color 0.125s linear;
 }
 
 .activity-post-first-letter {
