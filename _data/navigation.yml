@@ -7,7 +7,7 @@
   icon: "fa-solid fa-pen-to-square"
 - name: Certifications
   link: /certifications/
-  icon: "fa-solid fa-graduation-cap"
+  icon: "fa-solid fa-award"
 - name: Links
   link: /links/
   icon: "fa-solid fa-link"
