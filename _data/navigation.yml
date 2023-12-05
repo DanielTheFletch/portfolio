@@ -5,8 +5,8 @@
 - name: Activity
   link: /activity/
   icon: "fa-solid fa-pen-to-square"
-- name: Credentials
-  link: /credentials/
+- name: Certifications
+  link: /certifications/
   icon: "fa-solid fa-graduation-cap"
 - name: Links
   link: /links/

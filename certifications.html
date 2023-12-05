@@ -1,0 +1,41 @@
+---
+title: Certifications
+subheading: "h2 fw-bold pb-1"
+---
+
+<!-- Page heading -->
+<div class="container-fluid bg-dark fg-light page-heading mb-2 py-5">
+  <h1 class="h1 fw-bold text-center">Certifications</h1>
+</div>
+
+<!-- Web development -->
+<div class="container-fluid mb-5 pb-5">
+  <h2 class="{{ page.subheading }}">Certifications in Web Development</h2>
+  {% assign certs = site.data.certifications | reverse %}
+  {% for cert in certs %}
+    <div class="row row-cols-2">
+      <div class="col">
+        <p class="fw-bold mb-0">
+          <a class="cert-link text-decoration-none" href={{ cert.link }} target="_blank">
+            <span class="text-decoration-underline">{{ cert.name }}</span>
+            <i class="fa-solid fa-up-right-from-square"></i>
+          </a>
+        </p>
+        <p class="mb-1">{{ cert.org }}</p>
+      </div>
+      <div class="col text-end">
+        <p class="fw-light">{{ cert.date }}</p>
+      </div>
+    </div>
+    <div class="row row-cols-1 mb-3">
+      <div class="col">
+        <ul class="list-unstyled mt-1">
+          {% assign sorted_skills = cert.skills | sort %}
+          {% for skill in sorted_skills %}
+            <li class="badge pill-rounded bg-secondary fw-light">{{ skill }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endfor %}
+</div>
