@@ -11,3 +11,12 @@ primary_contact:
     user: "@DanielTheFletch"
     icon: "fa-brands fa-github"
     link: "https://www.github.com/DanielTheFletch"
+external_documents:
+  - name: "Résumé"
+    user: "PDF File"
+    icon: "fa-solid fa-file"
+    link: "#"
+  - name: "Curriculum Vitae"
+    user: "PDF File"
+    icon: "fa-solid fa-file"
+    link: "#"

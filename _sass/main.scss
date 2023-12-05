@@ -1,6 +1,6 @@
 /* Main stylesheet */
 
-
+/* General properties */
 * {
     box-sizing: border-box;
     font-family: $poppins;
@@ -9,6 +9,21 @@
 section {
     padding-bottom: $spacer;
     padding-top: ($spacer * 1.5);
+}
+
+
+/* General color theming */
+.bg-dark {
+    background-color: $dark;
+}
+
+.fg-light {
+    color: $light;
+}
+
+.page-heading {
+    border-bottom: 0.6rem groove $white;
+    border-top: 0.6rem ridge $primary;
 }
 
 
@@ -74,21 +89,6 @@ section {
 }
 
 
-/* General color theming */
-.bg-dark {
-    background-color: $dark;
-}
-
-.fg-light {
-    color: $light;
-}
-
-.page-heading {
-    border-bottom: 0.6rem groove $white;
-    border-top: 0.6rem ridge $primary;
-}
-
-
 /* Primary contact info on home page */
 .contact-item {
     color: $light;
@@ -135,7 +135,7 @@ section {
 }
 
 
-/* External links */
+/* Links */
 .external-link {
     color: $black;
 }

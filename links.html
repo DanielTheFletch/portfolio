@@ -1,6 +1,6 @@
 ---
 title: Links & Profiles
-subheading: "h2 fw-bold pb-1"
+subheading: "h2 fw-bold mb-0 pt-0"
 ---
 
 <!-- Page heading -->
@@ -9,9 +9,29 @@ subheading: "h2 fw-bold pb-1"
 </div>
 
 <!-- Primary contact -->
-<div class="container-fluid mb-5">
+<div class="container-fluid border-bottom border-secondary border-2 mb-4 pb-2">
   <h2 class="{{ page.subheading }}">Primary Contact</h2>
+  <p class="fs-5 fw-light mt-0 mb-4">The main methods of communication I use on a daily basis. Feel free to reach out!</p>
   {% assign items = site.data.links.primary_contact %}
+  <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 text-start">
+  {% for item in items %}
+    <div class="col mb-4">
+      <p class="fs-4 fw-bold my-0"><i class="{{ item.icon }}"></i> {{ item.name }}</p>
+      <p class="fs-5 my-0">
+        <a class="external-link" href={{ item.link }}>
+          {{ item.user }}
+        </a>
+      </p>
+    </div>
+  {% endfor %}
+  </div>
+</div>
+
+<!-- External documents -->
+<div class="container-fluid border-bottom border-secondary border-2 mb-4 pb-2">
+  <h2 class="{{ page.subheading }}">External Documents</h2>
+  <p class="fs-5 fw-light mt-0 mb-4">Check out my professional résumé and CV. Links will, in a new tab, open a PDF file shared publicly via Google Drive.</p>
+  {% assign items = site.data.links.external_documents %}
   <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 text-start">
   {% for item in items %}
     <div class="col mb-4">
