@@ -1,11 +1,11 @@
-# Resources
-
-- name: "Harvard CS50"
-  link: "https://pll.harvard.edu/course/cs50-introduction-computer-science"
-  blurb: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nobis minus voluptate libero, nam commodi placeat nesciunt est? Mollitia ducimus, velit debitis minus est blanditiis dolores vitae sequi obcaecati adipisci!"
-- name: "freeCodeCamp"
-  link: "https://www.freecodecamp.org/"
-  blurb: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum voluptates sint asperiores sequi facilis expedita tempore doloribus odio quaerat nisi non itaque alias esse, inventore aliquam quidem mollitia necessitatibus modi! Lorem ipsum dolor sit amet consectetur adipisicing elit."
-- name: "The Odin Project"
-  link: "https://www.theodinproject.com/"
-  blurb: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, soluta adipisci dicta quam nobis recusandae eos. Est asperiores earum ea doloremque neque nulla labore, alias cumque illo adipisci, qui voluptatibus!"
+learning:
+  - name: "Harvard CS50"
+    blurb: "Harvard University's one-of-a-kind introduction to computer science course taught by professor David J. Malan, as well as many offshoot courses offered under the CS50 umbrella. The online course offerings are completely free to enroll in (seriously), and they offer an unparalleled learning experience for computer science newcomers and veterans alike. I am currently working on my final projects for CS50x and CS50P, and I hope to enroll in more CS50 courses come 2024!"
+    links:
+      - name: "Harvard University"
+        href: "#"
+      - name: "CS50x Course Website"
+        href: "#"
+      - name: "Enroll on EdX (FOR FREE!)"
+        href: "#"
+reference:
