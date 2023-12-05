@@ -8,27 +8,83 @@ subheading: "h2 fw-bold mb-1 pt-0"
   <h1 class="h1 fw-bold text-center">External Resources</h1>
 </div>
 
+<!-- Introduction -->
+<div class="container-fluid border-bottom border-secondary border-2 mb-4 pb-2">
+  <h2 class="{{ page.subheading }}">Introduction</h2>
+  <p>Placeholder text.</p>
+</div>
+
 <!-- Educational -->
 <div class="container-fluid border-bottom border-secondary border-2 mb-4 pb-2">
   <h2 class="{{ page.subheading }}">Educational Resources</h2>
   <p class="fs-5 fw-light mt-0 mb-4">Various learning institutions and organizations that have been instrumental to my professional, personal, and academic growth.</p>
   {% assign items = site.data.resources.learning %}
   <div class="row row-cols-1">
-  {% for item in items %}
-    <div class="col mb-4">
-      <p class="fs-5 fw-bold my-0">{{ item.name }}</p>
-      <p class="fs-6 fw-light mt-0 mb-1">{{ item.blurb }}</p>
-      <p class="fs-6 fw-light my-0">Links:</p>
-      <ul>
-        {% for link in item.links %}
-          <li>
-            <a class="external-link" href={{ link.href }}>
-              {{ link.name }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  {% endfor %}
+    {% for item in items %}
+      <div class="col mb-4">
+        <p class="fs-5 fw-bold my-0">{{ item.name }}</p>
+        <p class="mt-0 mb-2">{{ item.blurb }}</p>
+        <p class="my-0">Links:</p>
+        <ul>
+          {% for link in item.links %}
+            <li>
+              <a class="external-link" href={{ link.href }}>
+                {{ link.name }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- Job boards -->
+<div class="container-fluid border-bottom border-secondary border-2 mb-4 pb-2">
+  <h2 class="{{ page.subheading }}">Job Boards</h2>
+  <p class="fs-5 fw-light mt-0 mb-4">A wide array of online job boards I have used frequently throughout the course of my job search.</p>
+  {% assign items = site.data.resources.job_boards %}
+  <div class="row row-cols-1">
+    {% for item in items %}
+      <div class="col mb-4">
+        <p class="fs-5 fw-bold my-0">{{ item.name }}</p>
+        <p class="mt-0 mb-2">{{ item.blurb }}</p>
+        <p class="my-0">Links:</p>
+        <ul>
+          {% for link in item.links %}
+            <li>
+              <a class="external-link" href={{ link.href }}>
+                {{ link.name }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- References -->
+<div class="container-fluid mb-4">
+  <h2 class="{{ page.subheading }}">References and Documentation</h2>
+  <p class="fs-5 fw-light mt-0 mb-4">A wide array of online job boards I have used frequently throughout the course of my job search.</p>
+  {% assign items = site.data.resources.references %}
+  <div class="row row-cols-1">
+    {% for item in items %}
+      <div class="col mb-4">
+        <p class="fs-5 fw-bold my-0">{{ item.name }}</p>
+        <p class="mt-0 mb-2">{{ item.blurb }}</p>
+        <p class="my-0">Links:</p>
+        <ul>
+          {% for link in item.links %}
+            <li>
+              <a class="external-link" href={{ link.href }}>
+                {{ link.name }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
   </div>
 </div>
