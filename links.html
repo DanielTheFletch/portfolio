@@ -1,6 +1,6 @@
 ---
 title: Links & Profiles
-subheading: "h2 fw-bold mb-0 pt-0"
+subheading: "h2 fw-bold mb-1 pt-0"
 ---
 
 <!-- Page heading -->
@@ -50,16 +50,15 @@ subheading: "h2 fw-bold mb-0 pt-0"
 <!-- Online learning -->
 <div class="container-fluid border-bottom border-secondary border-2 mb-4 pb-2">
   <h2 class="{{ page.subheading }}">Online Learning</h2>
-  <p class="fs-5 fw-light mt-0 mb-4">Check out my professional résumé and CV. Links will, in a new tab, open a PDF file shared publicly via Google Drive.</p>
-  {% assign items = site.data.links.external_documents %}
+  <p class="fs-5 fw-light mt-0 mb-4">A selection of profiles from some of the online learning resources I use most. Visit these to get a look at some of my personal progress as a developer!</p>
+  {% assign items = site.data.links.online_learning %}
   <div class="row row-cols-1">
   {% for item in items %}
     <div class="col mb-4">
       <p class="fs-4 fw-bold my-0"><i class="{{ item.icon }}"></i> {{ item.name }}</p>
       <p class="fs-5 my-0">
-        <a class="external-link text-decoration-none" href={{ item.link }} target="_blank">
-          <span class="text-decoration-underline">{{ item.display }}</span>
-          <i class="fa-solid fa-up-right-from-square"></i>
+        <a class="external-link" href={{ item.link }}>
+          {{ item.display }}
         </a>
       </p>
     </div>
@@ -67,19 +66,18 @@ subheading: "h2 fw-bold mb-0 pt-0"
   </div>
 </div>
 
-<!-- Programming practice -->
+<!-- Miscellaneous -->
 <div class="container-fluid mb-4">
-  <h2 class="{{ page.subheading }}">Programming Practice</h2>
-  <p class="fs-5 fw-light mt-0 mb-4">Check out my professional résumé and CV. Links will, in a new tab, open a PDF file shared publicly via Google Drive.</p>
-  {% assign items = site.data.links.external_documents %}
+  <h2 class="{{ page.subheading }}">Miscellaneous</h2>
+  <p class="fs-5 fw-light mt-0 mb-4">The important links that just didn't quite fit nicely into a category. Included are profiles for online job bulletins, programming practice websites, and various other online computer science communities.</p>
+  {% assign items = site.data.links.miscellaneous %}
   <div class="row row-cols-1">
   {% for item in items %}
     <div class="col mb-4">
       <p class="fs-4 fw-bold my-0"><i class="{{ item.icon }}"></i> {{ item.name }}</p>
       <p class="fs-5 my-0">
-        <a class="external-link text-decoration-none" href={{ item.link }} target="_blank">
-          <span class="text-decoration-underline">{{ item.display }}</span>
-          <i class="fa-solid fa-up-right-from-square"></i>
+        <a class="external-link" href={{ item.link }}>
+          {{ item.display }}
         </a>
       </p>
     </div>
