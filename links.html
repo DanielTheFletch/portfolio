@@ -13,13 +13,13 @@ subheading: "h2 fw-bold mb-0 pt-0"
   <h2 class="{{ page.subheading }}">Primary Contact</h2>
   <p class="fs-5 fw-light mt-0 mb-4">The main methods of communication I use on a daily basis. Feel free to reach out!</p>
   {% assign items = site.data.links.primary_contact %}
-  <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 text-start">
+  <div class="row row-cols-1">
   {% for item in items %}
     <div class="col mb-4">
       <p class="fs-4 fw-bold my-0"><i class="{{ item.icon }}"></i> {{ item.name }}</p>
       <p class="fs-5 my-0">
         <a class="external-link" href={{ item.link }}>
-          {{ item.user }}
+          {{ item.display }}
         </a>
       </p>
     </div>
@@ -32,13 +32,14 @@ subheading: "h2 fw-bold mb-0 pt-0"
   <h2 class="{{ page.subheading }}">External Documents</h2>
   <p class="fs-5 fw-light mt-0 mb-4">Check out my professional résumé and CV. Links will, in a new tab, open a PDF file shared publicly via Google Drive.</p>
   {% assign items = site.data.links.external_documents %}
-  <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 text-start">
+  <div class="row row-cols-1">
   {% for item in items %}
     <div class="col mb-4">
       <p class="fs-4 fw-bold my-0"><i class="{{ item.icon }}"></i> {{ item.name }}</p>
       <p class="fs-5 my-0">
-        <a class="external-link" href={{ item.link }}>
-          {{ item.user }}
+        <a class="external-link text-decoration-none" href={{ item.link }} target="_blank">
+          <span class="text-decoration-underline">{{ item.display }}</span>
+          <i class="fa-solid fa-up-right-from-square"></i>
         </a>
       </p>
     </div>
