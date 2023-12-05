@@ -89,7 +89,7 @@ section {
 }
 
 
-/* Primary contact info */
+/* Primary contact info on home page */
 .contact-item {
     color: $light;
     font-family: $titillium-web;
@@ -135,7 +135,17 @@ section {
 }
 
 
-/* Certifications */
-.cert-link:hover {
-    color: $secondary;
+/* External links */
+.external-link {
+    color: $black;
+}
+
+.external-link:hover {
+    color: $tertiary;
+}
+
+.fa-up-right-from-square {
+    bottom: 0.125em;
+    font-size: 0.725em;
+    position: relative;
 }

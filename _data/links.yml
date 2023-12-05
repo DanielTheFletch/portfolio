@@ -1,0 +1,13 @@
+primary_contact:
+  - name: "Email Address"
+    user: "dfletcher-mail@proton.me"
+    icon: "fa-solid fa-envelope"
+    link: "mailto:dfletcher-mail@proton.me"
+  - name: "LinkedIn"
+    user: "/in/DanielTheFletch"
+    icon: "fa-brands fa-linkedin"
+    link: "https://www.linkedin.com/in/DanielTheFletch"
+  - name: "GitHub"
+    user: "@DanielTheFletch"
+    icon: "fa-brands fa-github"
+    link: "https://www.github.com/DanielTheFletch"

@@ -1,19 +1,27 @@
 ---
 title: Links & Profiles
+subheading: "h2 fw-bold pb-1"
 ---
 
-<h1>Profiles</h1>
+<!-- Page heading -->
+<div class="container-fluid bg-dark fg-light page-heading mb-2 py-5">
+  <h1 class="h1 fw-bold text-center">Links & Profiles</h1>
+</div>
 
-<ul>
-  {% for profile in site.data.profiles %}
-    <li>
-      <img alt="{{ profile.platform.name }} logo" src="#">
-      <a href={{ profile.account.link }}>{{ profile.account.name }}</a>
-      {% if profile.active %}
-        <p style="color: green;">Active</p>
-      {% else %}
-        <p style="color: red;">Inactive</p>
-      {% endif %}
-    </li>
+<!-- Primary contact -->
+<div class="container-fluid mb-5">
+  <h2 class="{{ page.subheading }}">Primary Contact</h2>
+  {% assign items = site.data.links.primary_contact %}
+  <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 text-start">
+  {% for item in items %}
+    <div class="col mb-4">
+      <p class="fs-4 fw-bold my-0"><i class="{{ item.icon }}"></i> {{ item.name }}</p>
+      <p class="fs-5 my-0">
+        <a class="external-link" href={{ item.link }}>
+          {{ item.user }}
+        </a>
+      </p>
+    </div>
   {% endfor %}
-</ul>
+  </div>
+</div>
