@@ -4,15 +4,9 @@ subheading: "h2 fw-bold mb-1 pt-0"
 ---
 
 <!-- Page heading -->
-<div class="container-fluid bg-dark fg-light page-heading mb-2 py-5">
+<div class="container-fluid bg-dark fg-light page-heading mb-0 py-5">
   <h1 class="h1 fw-bold text-center">External Resources</h1>
 </div>
-
-<!-- Introduction -->
-<section class="container-fluid section-resources">
-  <h2 class="{{ page.subheading }}">Introduction</h2>
-  <p>Throughout my personal journey in the world of computer science, I have made use of all sorts of online resources. Whether it be to learn, to practice, or oftentimes both, these resources equipped me with a more powerful mental toolkit than I would have had otherwise. I thought it only fair to share these resources and spread the love!</p>
-</section>
 
 <!-- Resources by section -->
 {% for resource_type in site.data.resources %}
