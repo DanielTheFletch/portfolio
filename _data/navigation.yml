@@ -5,15 +5,15 @@
 - name: Activity
   link: /activity/
   icon: "fa-solid fa-pen-to-square"
+- name: Projects
+  link: /projects/
+  icon: "fa-solid fa-file-code"
 - name: Certifications
   link: /certifications/
   icon: "fa-solid fa-award"
 - name: Links
   link: /links/
   icon: "fa-solid fa-link"
-- name: Projects
-  link: /projects/
-  icon: "fa-solid fa-file-code"
 - name: Resources
   link: /resources/
   icon: "fa-solid fa-globe"
