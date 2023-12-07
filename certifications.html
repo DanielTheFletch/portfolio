@@ -1,6 +1,6 @@
 ---
 title: Certifications
-subheading: "h2 fw-bold pb-1"
+subheading: "h2 fw-bold mb-3 pt-0"
 ---
 
 <!-- Page heading -->
@@ -8,34 +8,39 @@ subheading: "h2 fw-bold pb-1"
   <h1 class="h1 fw-bold text-center">Certifications</h1>
 </div>
 
-<!-- Web development -->
-<div class="container-fluid mb-5 pb-5">
-  <h2 class="{{ page.subheading }}">Certifications in Web Development</h2>
-  {% assign certs = site.data.certifications | reverse %}
-  {% for cert in certs %}
-    <div class="row row-cols-2">
-      <div class="col">
-        <p class="fw-bold mb-0">
-          <a class="external-link text-decoration-none" href={{ cert.link }} target="_blank">
-            <span class="text-decoration-underline">{{ cert.name }}</span>
-            <i class="fa-solid fa-up-right-from-square"></i>
-          </a>
-        </p>
-        <p class="mb-1">{{ cert.org }}</p>
+<!-- Certifications by section -->
+{% for cert_type in site.data.certifications %}
+  <section class="container-fluid main-section">
+    <h2 class="{{ page.subheading }}">{{ cert_type.title }}</h2>
+    {% assign certs = cert_type.certs | reverse %}
+    {% for cert in certs %}
+      <div class="row row-cols-2">
+        <div class="col">
+          <p class="fs-5 fw-bold mb-0">
+            <a class="external-link text-decoration-none" href={{ cert.link }} target="_blank">
+              <span class="text-decoration-underline">{{ cert.name }}</span>
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </p>
+          <p class="fs-6 mb-1">Awarded by {{ cert.org }}</p>
+        </div>
+        <div class="col text-end">
+          <p class="fs-5 fw-light">{{ cert.date }}</p>
+        </div>
       </div>
-      <div class="col text-end">
-        <p class="fw-light">{{ cert.date }}</p>
+      <div class="row row-cols-1 mb-3">
+        <div class="col">
+          <ul class="list-unstyled mt-1">
+            {% assign sorted_skills = cert.skills | sort %}
+            {% for skill in sorted_skills %}
+              <li class="badge bg-primary pill-rounded fw-normal">{{ skill }}</li>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="row row-cols-1 mb-3">
-      <div class="col">
-        <ul class="list-unstyled mt-1">
-          {% assign sorted_skills = cert.skills | sort %}
-          {% for skill in sorted_skills %}
-            <li class="badge pill-rounded bg-secondary fw-light">{{ skill }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-  {% endfor %}
-</div>
+    {% endfor %}
+  </section>
+{% endfor %}
+
+<!-- Placeholder for spacing -->
+<div class="container-fluid my-3 py-3"></div>
