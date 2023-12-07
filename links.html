@@ -4,9 +4,35 @@ subheading: "h2 fw-bold mb-1 pt-0"
 ---
 
 <!-- Page heading -->
-<div class="container-fluid bg-dark fg-light page-heading mb-2 py-5">
+<div class="container-fluid bg-dark fg-light page-heading mb-0 py-5">
   <h1 class="h1 fw-bold text-center">Links & Profiles</h1>
 </div>
+
+<!-- Links by section -->
+{% for link_type in site.data.links %}
+  <section class="container-fluid main-section">
+    <h2 class="{{ page.subheading }}">{{ link_type.title }}</h2>
+    <p class="fs-5 fw-light mt-0 mb-4">{{ link_type.subtitle }}</p>
+    <div class="row row-cols-1">
+      {% for item in link_type.items %}
+        <div class="col mb-4">
+          <p class="fs-4 fw-bold my-0"><i class="{{ item.icon }}"></i> {{ item.name }}</p>
+          <p class="fs-5">
+            {% if item.is_external_link %}
+              <a class="external-link text-decoration-none" href={{ item.link }} target="_blank">
+                <span class="text-decoration-underline">{{ item.display }}</span>
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            {% else %}
+              <a class="external-link" href={{ item.link }}>
+                {{ item.display }}
+              </a>
+            {% endif %}
+          </p>
+        </div>
+      {% endfor %}
+  </section>
+{% endfor %}
 
 <!-- Primary contact -->
 <div class="container-fluid border-bottom border-secondary border-2 mb-4 pb-2">
@@ -19,7 +45,12 @@ subheading: "h2 fw-bold mb-1 pt-0"
       <p class="fs-4 fw-bold my-0"><i class="{{ item.icon }}"></i> {{ item.name }}</p>
       <p class="fs-5 my-0">
         <a class="external-link" href={{ item.link }}>
-          {{ item.display }}
+          {% if item.is_external_link %}
+            <span class="text-decoration-underline">{{ item.display }}</span>
+            <i class="fa-solid fa-up-right-from-square"></i>
+          {% else %}
+            {{ item.display }}
+          {% endif %}
         </a>
       </p>
     </div>
@@ -69,7 +100,7 @@ subheading: "h2 fw-bold mb-1 pt-0"
 <!-- Miscellaneous -->
 <div class="container-fluid mb-4">
   <h2 class="{{ page.subheading }}">Miscellaneous</h2>
-  <p class="fs-5 fw-light mt-0 mb-4">The important links that just didn't quite fit nicely into a category. Included are profiles for online job bulletins, programming practice websites, and various other online computer science communities.</p>
+  <p class="fs- fw-light mt-0 mb-4">The important links that just didn't quite fit nicely into a category. Included are profiles for online job bulletins, programming practice websites, and various other online computer science communities.</p>
   {% assign items = site.data.links.miscellaneous %}
   <div class="row row-cols-1">
   {% for item in items %}

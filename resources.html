@@ -5,12 +5,12 @@ subheading: "h2 fw-bold mb-1 pt-0"
 
 <!-- Page heading -->
 <div class="container-fluid bg-dark fg-light page-heading mb-0 py-5">
-  <h1 class="h1 fw-bold text-center">External Resources</h1>
+  <h1 class="h1 fw-bold text-center">Helpful Resources</h1>
 </div>
 
 <!-- Resources by section -->
 {% for resource_type in site.data.resources %}
-  <section class="container-fluid section-resources">
+  <section class="container-fluid main-section">
     <h2 class="{{ page.subheading }}">{{ resource_type.title }}</h2>
     <p class="fs-5 fw-light mt-0 mb-4">{{ resource_type.subtitle }}</p>
     <div class="row row-cols-1">

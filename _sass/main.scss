@@ -154,11 +154,11 @@ section {
 }
 
 
-/* Resources */
-.section-resources {
-    border-bottom: 0.5em ridge $secondary;
+/* Main sections */
+.main-section {
+    border-bottom: 0.525em groove $secondary;
 }
 
-.section-resources:last-of-type {
+.main-section:last-of-type {
     border: none;
 }
