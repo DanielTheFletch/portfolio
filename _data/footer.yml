@@ -26,18 +26,18 @@ site-info:
 
 # Technology used
 technology:
-  - name: "Jekyll"
-    link: "https://jekyllrb.com/"
-  - name: "Liquid"
-    link: "https://liquidjs.com/tutorials/intro-to-liquid.html"
   - name: "HTML"
     link: "https://developer.mozilla.org/en-US/docs/Web/HTML"
   - name: "CSS"
     link: "https://developer.mozilla.org/en-US/docs/Web/CSS"
+  - name: "Bootstrap"
+    link: "https://getbootstrap.com/docs/5.3/getting-started/introduction/"
   - name: "SASS / SCSS"
-    link: "https://sass-lang.com/"
-  - name: "Ruby"
-    link: "https://www.ruby-lang.org/en/"
+    link: "https://sass-lang.com/guide/"
+  - name: "Jekyll"
+    link: "https://jekyllrb.com/docs/"
+  - name: "Liquid"
+    link: "https://liquidjs.com/tutorials/intro-to-liquid.html"
 
 # Contact information
 contact:

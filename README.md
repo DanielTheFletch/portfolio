@@ -26,18 +26,16 @@ My portfolio website is divided into six main sections:
 
 ## Technologies used
 
-Below is a listing of the technologies used to power my portfolio, along with relevant corresponding links to each.
+Below is a listing of the technologies used to power my portfolio, alongside links corresponding to their documentation.
 
 | Technologies | Relevant links |
 | :----------- | -------------: |
-| Jekyll | [Official Site](https://jekyllrb.com/docs/) |
-| Liquid | [Official Site](https://liquidjs.com/tutorials/intro-to-liquid.html) |
 | HTML | [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML) |
 | CSS | [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS) |
-| SASS | [Official Site](https://sass-lang.com/guide/) |
-| Ruby | [Official Site](https://www.ruby-lang.org/en/documentation/) |
-| Git | [Official Site](https://git-scm.com/doc) |
-| GitHub Pages | [Documentation](https://docs.github.com/en/pages) |
+| Bootstrap | [Official Site](https://getbootstrap.com/docs/5.3/getting-started/introduction/) |
+| SASS / SCSS | [Official Site](https://sass-lang.com/guide/) |
+| Jekyll | [Official Site](https://jekyllrb.com/docs/) |
+| Liquid | [Official Site](https://liquidjs.com/tutorials/intro-to-liquid.html) |
 
 
 ## Site information
