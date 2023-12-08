@@ -18,13 +18,14 @@ title: Project Work
     <div class="card my-3">
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="../assets/img/proj_previews/{{ project.preview }}" class="img-fluid rounded-start" alt="Blah blah blah">
+          <img src="{{"/assets/img/proj_previews/" | relative_url}}{{ project.img_src }}" class="img-fluid rounded-start" alt="{{ project.img_alt }}">
         </div>
         <div class="col-md-8">
           <div class="card-body">
             <h5 class="card-title">{{ project.title }}</h5>
+            <p class="card-text"><small class="text-body-secondary">{{ project.date | date_to_string }}</small></p>
             <p class="card-text">{{ project.excerpt }}</p>
-            <p class="card-text"><small class="text-body-secondary">Some date</small></p>
+            <a href={{ project.url | relative_url }} class="btn btn-primary">Project Page</a>
           </div>
         </div>
       </div>

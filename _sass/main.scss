@@ -143,7 +143,11 @@ section {
     color: $black;
 }
 
-.external-link:hover {
+.external-link-flipped {
+    color: $white;
+}
+
+.external-link:hover, .external-link-flipped:hover {
     color: $tertiary;
 }
 

@@ -19,6 +19,11 @@ defaults:
       layout: "post"
   - scope:
       path: {{ baseurl }}
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: {{ baseurl }}
     values:
       layout: "default"
 
