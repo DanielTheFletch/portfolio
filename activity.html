@@ -1,6 +1,5 @@
 ---
 title: Recent Activity
-subheading: "h2 fw-bold mb-1 pt-0"
 ---
 
 <!-- Page heading -->
@@ -10,7 +9,7 @@ subheading: "h2 fw-bold mb-1 pt-0"
 
 <!-- Latest post -->
 <section class="container-fluid main-section">
-  <h2 class="{{ page.subheading }}">Latest Post</h2>
+  <h2 class="{{ site.subheading }}">Latest Post</h2>
   {% assign latest = site.posts | first %}
   <div class="container my-4">
     <div class="row row-cols-1 position-relative activity-post">
@@ -27,7 +26,7 @@ subheading: "h2 fw-bold mb-1 pt-0"
 
 <!-- Previous posts -->
 <section class="container-fluid main-section">
-  <h2 class="{{ page.subheading }}">Previous Posts</h2>
+  <h2 class="{{ site.subheading }}">Previous Posts</h2>
   <p class="fs-5 fw-light mt-0 mb-4">More content coming soon!</p>
   <p class="mb-5 pb-5">As soon as any subsequent activity posts are made, the remaining post history will show up here.</p>
 </section>

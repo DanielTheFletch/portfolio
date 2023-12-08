@@ -1,6 +1,5 @@
 ---
 title: Certifications
-subheading: "h2 fw-bold mb-3 pt-0"
 ---
 
 <!-- Page heading -->
@@ -11,7 +10,7 @@ subheading: "h2 fw-bold mb-3 pt-0"
 <!-- Certifications by section -->
 {% for cert_type in site.data.certifications %}
   <section class="container-fluid main-section">
-    <h2 class="{{ page.subheading }}">{{ cert_type.title }}</h2>
+    <h2 class="{{ site.subheading }}">{{ cert_type.title }}</h2>
     {% assign certs = cert_type.certs | reverse %}
     {% for cert in certs %}
       <div class="row row-cols-2">
