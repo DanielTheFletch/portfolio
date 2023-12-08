@@ -1,6 +1,11 @@
-# Collections
+# Collection settings
 collections:
-  collections_dir: collections
+  posts:
+    output: true
+    permalink: "/activity/:collection/:year/:month/:title/"
+  projects:
+    output: true
+    permalink: "/:collection/:year/:month/:title/"
 
 # Default permalink for main pages
 permalink: "/:name/"
@@ -12,7 +17,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      permalink: "/activity/posts/:year/:title/"
   - scope:
       path: {{ baseurl }}
     values:
@@ -23,6 +27,6 @@ title: "Jekyll Test"
 url: "https://danielthefletch.github.io"
 baseurl: "/portfolio"
 
-# SASS configuration
+# SASS defaults
 sass:
   sass_dir: "/_sass"
