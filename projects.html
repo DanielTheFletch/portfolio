@@ -1,12 +1,40 @@
 ---
-title: My Projects
+title: Project Work
 ---
 
-<h1>Projects</h1>
+<!-- Helper variables -->
+{% assign featured_projects = site.projects | where: "featured", true %}
+{% assign all_projects = site.projects %}
 
-{% for project in site.projects %}
-  <section class="container-fluid">
-    <p>{{ project.title }}</p>
-    <p>{{ project.excerpt }}</p>
-  </section>
-{% endfor %}
+<!-- Page heading -->
+<div class="container-fluid bg-dark fg-light page-heading mb-0 py-5">
+  <h1 class="h1 fw-bold text-center">{{ page.title }}</h1>
+</div>
+
+<!-- Featured projects -->
+<section class="container-fluid main-section">
+  <h2 class="{{ site.subheading }}">Featured Projects</h2>
+  {% for project in featured_projects %}
+    <div class="card my-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="../assets/img/proj_previews/{{ project.preview }}" class="img-fluid rounded-start" alt="Blah blah blah">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{{ project.title }}</h5>
+            <p class="card-text">{{ project.excerpt }}</p>
+            <p class="card-text"><small class="text-body-secondary">Some date</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+<!-- Project history -->
+<section class="container-fluid main-section">
+  <h2 class="{{ site.subheading }}">Project History</h2>
+  {% for project in all_projects %}
+  {% endfor %}
+</section>
