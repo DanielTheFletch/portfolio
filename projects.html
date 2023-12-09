@@ -3,8 +3,8 @@ title: Project Work
 ---
 
 <!-- Helper variables -->
-{% assign featured_projects = site.projects | where: "featured", true %}
-{% assign all_projects = site.projects %}
+{% assign featured_projects = site.projects | where: "featured", true | sort: date | reverse %}
+{% assign all_projects = site.projects | sort: date | reverse %}
 
 <!-- Page heading -->
 <div class="container-fluid bg-dark fg-light page-heading mb-0 py-5">

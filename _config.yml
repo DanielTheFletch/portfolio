@@ -5,7 +5,7 @@ collections:
     permalink: "/activity/:collection/:year/:month/:title"
   projects:
     output: true
-    permalink: "/:collection/:year/:month/:title"
+    permalink: "/:collection/:year/:title"
 
 # Default permalink for main pages
 permalink: "/:name/"

@@ -44,8 +44,7 @@ layout: default
       <!-- Skills -->
       <p class="fw-bold fs-4 mb-1">Skills & Technologies</p>
       <ul class="list-unstyled fs-5">
-        {% assign sorted_skills = page.skills | sort %}
-        {% for skill in sorted_skills %}
+        {% for skill in page.skills %}
           <li class="badge bg-primary pill-rounded fw-normal">{{ skill }}</li>
         {% endfor %}
       </ul>
