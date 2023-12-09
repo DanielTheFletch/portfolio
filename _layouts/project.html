@@ -6,7 +6,8 @@ layout: default
 <div class="container-fluid bg-dark fg-light text-center page-heading mb-5 mt-0 py-5">
   <div class="container">
     <h1 class="h1 fw-bold mb-2">{{ page.title }}</h1>
-    <p class="mb-1 mt-0"><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Last updated {{ page.date | date_to_long_string }}</p>
+    {% assign shortened_date = page.date | date_to_long_string | split: " " | shift | join: " " %}
+    <p class="mb-1 mt-0"><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Last updated {{ shortened_date }}</p>
     <p class="mb-0 mt-1"><i class="fa-solid fa-box-archive"></i>&nbsp;&nbsp;{{ page.type }}</p>
   </div>
 </div>
@@ -14,22 +15,14 @@ layout: default
 <!-- Project summary -->
 <div class="container-fluid main-section mb-0 pb-5">
   <div class="row g-0 d-flex justify-content-around">
-    <div class="col-md-4 mb-3">
-      <img src="{{"/assets/img/proj_previews/" | relative_url}}{{ page.img_src }}" class="img-fluid rounded-start" alt="{{ page.img_alt }}">
+    <div class="col-md-4 mb-3 d-flex justify-content-center align-items-center">
+      <img src="{{"/assets/img/proj_previews/" | relative_url}}{{ page.img_src }}" class="img-fluid" alt="{{ page.img_alt }}">
     </div>
-    <div class="col-md-6 border-top border-bottom border-3 border-primary py-3">
-      <!-- Skills -->
-      <p class="fw-bold fs-4 mb-1">Skills & Technologies</p>
-      <ul class="list-unstyled fs-5 mb-3 pb-3 border-bottom border-subtle">
-        {% assign sorted_skills = page.skills | sort %}
-        {% for skill in sorted_skills %}
-          <li class="badge bg-primary pill-rounded fw-normal">{{ skill }}</li>
-        {% endfor %}
-      </ul>
+    <div class="col-md-6 border-top border-bottom border-3 border-primary px-2 py-4">
 
       <!-- Developer credits -->
       <p class="fw-bold fs-4 mb-1">Developer Credits</p>
-      <ul class="list-unstyled fs-5 mb-3 pb-3 border-bottom border-subtle">
+      <ul class="list-unstyled mb-3 pb-3 border-bottom border-subtle">
         {% if page.team %}
           <li class="mb-1 mt-0"><i class="fa-solid fa-users"></i>&nbsp;&nbsp;Developed by {{ page.team }}</li>
           <li class="mb-0 mt-1"><i class="fa-solid fa-id-badge"></i>&nbsp;&nbsp;Served as {{ page.role }}</li>
@@ -46,7 +39,16 @@ layout: default
           <i class="fa-solid fa-up-right-from-square"></i>
         </a>
       </p>
-      <p class="fw-light">Link will open in a new tab.</p>
+      <p class="fw-light mb-3 pb-3 border-bottom border-subtle">Link will open in a new tab.</p>
+
+      <!-- Skills -->
+      <p class="fw-bold fs-4 mb-1">Skills & Technologies</p>
+      <ul class="list-unstyled fs-5">
+        {% assign sorted_skills = page.skills | sort %}
+        {% for skill in sorted_skills %}
+          <li class="badge bg-primary pill-rounded fw-normal">{{ skill }}</li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
 </div>
