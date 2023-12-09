@@ -2,10 +2,10 @@
 collections:
   posts:
     output: true
-    permalink: "/activity/:collection/:year/:month/:title/"
+    permalink: "/activity/:collection/:year/:month/:title"
   projects:
     output: true
-    permalink: "/:collection/:year/:month/:title/"
+    permalink: "/:collection/:year/:month/:title"
 
 # Default permalink for main pages
 permalink: "/:name/"
