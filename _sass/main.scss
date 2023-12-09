@@ -166,3 +166,17 @@ section {
 .main-section:last-of-type {
     border: none;
 }
+
+
+/* Projects */
+.row-project-featured {
+    border-bottom: 0.125rem solid $dark-border-subtle;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+.row-project-featured:last-of-type {
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
