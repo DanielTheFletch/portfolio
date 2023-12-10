@@ -58,8 +58,10 @@ title: Project Work
             <p class="fs-5 mb-0">{{ project.title }}</p>
             <p><small class="fw-light text-body-secondary">{{ shortened_date }}</small></p>
           </div>
-          <div>
-            <p class="fs-1 fw-bold"><i class="{{ project.icon }}"></i></p>
+          <div class="fs-2 text-center">
+            {% for icon in project.icons %}
+              &nbsp;<span class="{{ icon }}"></span>&nbsp;
+            {% endfor %}
           </div>
         </div>
         <p>{{ project.desc }}</p>

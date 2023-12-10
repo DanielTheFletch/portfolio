@@ -170,9 +170,9 @@ section {
 
 /* Projects */
 .featured-item {
-    border: 0.5rem ridge $dark-border-subtle;
+    border: 0.75rem groove $primary-border-subtle;
     box-shadow: 0.375rem 0.375rem 0.375rem $dark;
-    margin: 1rem auto;
+    margin: 1rem auto 3.5rem;
     padding: 1rem 0.25rem 3rem;
 }
 
