@@ -160,7 +160,7 @@ section {
 
 /* Main sections */
 .main-section {
-    border-bottom: 0.525em groove $secondary;
+    border-bottom: 0.2rem double $dark-border-subtle;
 }
 
 .main-section:last-of-type {
@@ -170,7 +170,7 @@ section {
 
 /* Projects */
 .row-project-featured {
-    border-bottom: 0.125rem solid $dark-border-subtle;
+    border-bottom: 0.1rem solid $dark-border-subtle;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
 }
