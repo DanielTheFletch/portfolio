@@ -14,10 +14,10 @@ title: External Resources
     <p class="fs-5 fw-light mt-0 mb-4">{{ resource_type.subtitle }}</p>
     <div class="row row-cols-1">
       {% for resource in resource_type.resources %}
-        <div class="col mb-4">
+        <div class="col mb-3">
           <p class="fs-5 fw-bold my-0">{{ resource.name }}</p>
           <p class="mt-0 mb-2">{{ resource.blurb }}</p>
-          <p class="my-0">Links:</p>
+          <p class="mb-0">Links:</p>
           <ul>
             {% for link in resource.links %}
               <li>

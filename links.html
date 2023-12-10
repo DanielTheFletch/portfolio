@@ -14,7 +14,7 @@ title: Links & Profiles
     <p class="fs-5 fw-light mt-0 mb-4">{{ link_type.subtitle }}</p>
     <div class="row row-cols-1">
       {% for item in link_type.items %}
-        <div class="col mb-4">
+        <div class="col mb-3">
           <p class="fs-4 fw-bold my-0"><i class="{{ item.icon }}"></i> {{ item.name }}</p>
           <p class="fs-5">
             {% if item.is_external_link %}

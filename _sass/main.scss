@@ -170,13 +170,19 @@ section {
 
 /* Projects */
 .row-project-featured {
-    border-bottom: 0.1rem solid $dark-border-subtle;
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
+    border: 0.5rem ridge $dark-border-subtle;
+    box-shadow: 0.375rem 0.375rem 0.375rem $dark;
+    margin: 1rem auto;
+    padding: 1rem 0.25rem 3rem;
 }
 
-.row-project-featured:last-of-type {
-    border: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
+.project-item {
+    border: 0.375rem groove $secondary-border-subtle;
+    position: relative;
+    transition: box-shadow 275ms ease-in-out;
+}
+
+.project-item:hover {
+    box-shadow: 0.25rem 0.25rem 0.5rem $tertiary;
+    transition: box-shadow 275ms ease-in-out;
 }
