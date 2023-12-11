@@ -16,7 +16,8 @@ title: Project Work
   <h2 class="{{ site.subheading }}">Featured Projects</h2>
   <div class="container d-flex flex-column align-items-center mb-3">
     {% for project in featured_projects %}
-      <div class="row featured-item">
+      <div class="row featured-item mt-4 mb-3 px-3 py-4">
+        <a href={{ project.url | relative_url }} class="stretched-link"></a>
         <div class="col-lg-4 d-flex justify-content-center align-items-center">
           <img src="{{"/assets/img/proj-previews/" | relative_url}}{{ project.img_src }}" 
                class="img-fluid rounded mb-4 mb-lg-0 shadow" 
@@ -26,19 +27,16 @@ title: Project Work
           <div class="d-flex justify-content-between">
             <div>
               <p class="fs-4 fw-bold mb-0">{{ project.title }}</p>
-              {% assign shortened_date = project.date | date_to_string | split: " " | shift | join: " " %}
-              <p class="fw-light text-body-secondary mt-0">Last updated {{ shortened_date }}</p>
+              {% assign shortened_date = project.date | date_to_long_string | split: " " | shift | join: " " %}
+              <p class="fw-light mt-0">{{ shortened_date }}</p>
             </div>
-            <ul class="list-unstyled text-end fs-5">
-              {% for skill in project.skills %}
-                <li class="badge bg-primary pill-rounded fw-normal">{{ skill }}</li>
+            <div class="fs-2 text-center">
+              {% for icon in project.icons %}
+                &nbsp;<span class="{{ icon }} text-secondary-emphasis"></span>&nbsp;
               {% endfor %}
-            </ul>
+            </div>
           </div>
-          <p class="fs-5 mb-5">{{ project.desc }}</p>
-          <div class="d-flex d-lg-block justify-content-center">
-            <a href={{ project.url | relative_url }} class="btn btn-outline-dark fs-5 px-4">Project Page</a>
-          </div>
+          <p class="fs-5 mb-5 pe-5 pt-1">{{ project.desc }}</p>
         </div>
       </div>
     {% endfor %}
@@ -58,7 +56,7 @@ title: Project Work
             <p class="fs-5 mb-0">{{ project.title }}</p>
             <p><small class="fw-light text-body-secondary">{{ shortened_date }}</small></p>
           </div>
-          <div class="fs-2 text-center">
+          <div class="fs-4 text-center">
             {% for icon in project.icons %}
               &nbsp;<span class="{{ icon }}"></span>&nbsp;
             {% endfor %}

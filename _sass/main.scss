@@ -170,19 +170,26 @@ section {
 
 /* Projects */
 .featured-item {
-    border: 0.75rem groove $primary-border-subtle;
-    box-shadow: 0.375rem 0.375rem 0.375rem $dark;
-    margin: 1.25rem auto;
-    padding: 1rem 0.25rem 3rem;
+    background-color: $light;
+    border: 0.75rem inset $tertiary;
+    color: $dark;
+    position: relative;
+    transition: box-shadow 250ms ease-in-out;
+}
+
+.featured-item:hover {
+    background-image: var(--bs-gradient);
+    box-shadow: 0.5rem 0.5rem 1rem $dark;
+    transition: box-shadow 250ms ease-in-out;
 }
 
 .project-item {
-    border: 0.375rem groove $secondary-border-subtle;
+    border: 0.375rem inset $secondary-border-subtle;
     position: relative;
-    transition: box-shadow 275ms ease-in-out;
+    transition: box-shadow 125ms ease-in-out;
 }
 
 .project-item:hover {
     box-shadow: 0.25rem 0.25rem 0.5rem $tertiary;
-    transition: box-shadow 275ms ease-in-out;
+    transition: box-shadow 125ms ease-in-out;
 }
