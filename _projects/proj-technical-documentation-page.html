@@ -7,6 +7,7 @@ slug: technical-documentation-page
 date: 2023-07-07
 desc: "A reference for six select sorting algorithms presented through the lens of the C++ language."
 type: "freeCodeCamp Certification Project"
+related: "Responsive Web Design"
 
 # Icons
 icons:
@@ -29,5 +30,43 @@ link_site: "CodePen"
 ---
 
 <!-- Description and details -->
-<p class="fs-5 fw-light">{{ page.desc }}</p>
-<p>Placeholder text.</p>
+<section class="container-fluid main-section">
+  <h2 class="{{ site.subheading }}">Project Details</h2>
+  <p class="fs-5 fw-light">{{ page.desc }}</p>
+  <p>C++ is easily among my most-practiced programming languages. As such, I felt that I would be sufficiently equipped to construct a narrow-scope documentation in the language. Rather than choose to focus on a particular aspect of the language, however, I instead chose to focus on the concept of sorting algorithms more generally, but viewed through the lens of C++.</p>
+  <p>It's worth noting that I did not write the majority of the documentation content (see below for links to source documentation). The main focus of this project was piecing together content to make a cohesive, functional, and self-contained page of documentation.</p>
+  <p class="fw-bold mb-1">Relevant links:</p>
+  <ul>
+    <li><a class="external-link" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-technical-documentation-page-project/build-a-technical-documentation-page">Technical Documentation Page project specifications</a></li>
+    <li><a class="external-link" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Responsive Web Design certification track</a></li>
+    <li><a class="external-link" href="https://www.programiz.com/">Documentation Source #1: Programiz</a></li>
+    <li><a class="external-link" href="https://www.geeksforgeeks.org/">Documentation Source #2: Geeks for Geeks</a></li>
+  </ul>
+</section>
+
+<!-- Related projects -->
+<section class="container-fluid main-section">
+  <h2 class="{{ site.subheading }}">Related Projects</h2>
+  <p class="fs-5 fw-light">This is certification project <span class="fw-bold">3 of 5</span> in the Responsive Web Design track at freeCodeCamp. Every project in this track is linked below.</p>
+  <div class="row row-cols-1 row-cols-xl-2 mx-2 my-3">
+    {% assign related_projects = site.projects | where: "related", "Responsive Web Design" | sort: date %}
+    {% for project in related_projects %}
+      <div class="col-11 col-xl-5 mx-auto ms-xl-0 me-xl-5 my-2 ps-3 pe-4 py-3 project-item">
+        <a href={{ project.url | relative_url }} class="stretched-link"></a>
+        <div class="d-flex justify-content-between align-items-start">
+          <div>
+            {% assign shortened_date = project.date | date_to_string | split: " " | shift | join: " " %}
+            <p class="fs-5 mb-0">{{ project.title }}</p>
+            <p><small class="fw-light text-body-secondary">{{ shortened_date }}</small></p>
+          </div>
+          <div class="fs-4 text-center">
+            {% for icon in project.icons %}
+              &nbsp;<span class="{{ icon }}"></span>&nbsp;
+            {% endfor %}
+          </div>
+        </div>
+        <p>{{ project.desc }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>

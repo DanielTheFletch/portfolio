@@ -16,7 +16,7 @@ title: Project Work
   <h2 class="{{ site.subheading }}">Featured Projects</h2>
   <div class="container d-flex flex-column align-items-center mb-3">
     {% for project in featured_projects %}
-      <div class="row featured-item mt-4 mb-3 px-3 py-4">
+      <div class="row featured-item text-secondary-emphasis mt-4 mb-3 px-3 py-4">
         <a href={{ project.url | relative_url }} class="stretched-link"></a>
         <div class="col-lg-4 d-flex justify-content-center align-items-center">
           <img src="{{"/assets/img/proj-previews/" | relative_url}}{{ project.img_src }}" 
@@ -32,7 +32,7 @@ title: Project Work
             </div>
             <div class="fs-2 text-center">
               {% for icon in project.icons %}
-                &nbsp;<span class="{{ icon }} text-secondary-emphasis"></span>&nbsp;
+                &nbsp;<span class="{{ icon }}"></span>&nbsp;
               {% endfor %}
             </div>
           </div>
