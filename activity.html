@@ -12,15 +12,13 @@ title: Recent Activity
   <h2 class="{{ site.subheading }}">Latest Post</h2>
   {% assign latest = site.posts | first %}
   <div class="container my-3">
-    <div class="row row-cols-1 position-relative featured-item">
+    <div class="row row-cols-1 position-relative featured-item text-secondary-emphasis mt-4 mb-3 px-3 py-4">
+      <a href={{ latest.url | relative_url }} class="stretched-link"></a>
       <div class="col">
-        <h3 class="mb-1">{{ latest.title }}</h3>
-        <p class="fw-light mt-0">{{ latest.date | date_to_string }}</p>
+        <p class="fs-4 fw-bold mb-0">{{ latest.title }}</p>
+        <p class="fw-light mt-0">Written by Daniel Fletcher on {{ latest.date | date_to_long_string }}</p>
         <p>{{ latest.excerpt }}</p>
         <i class="fa-solid fa-ellipsis mb-4"></i>
-        <div class="d-flex flex-column justify-content-center align-items-center">
-          <a href={{ latest.url | relative_url }} class="btn btn-outline-dark fs-4">Continue Reading</a>
-        </div>
       </div>
     </div>
   </div>
