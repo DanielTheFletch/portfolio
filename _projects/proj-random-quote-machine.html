@@ -7,6 +7,7 @@ slug: random-quote-machine
 date: 2023-12-01
 desc: "Generate and share quotes from some of popular culture's most iconic characters."
 type: "freeCodeCamp Certification Project"
+related: "FCC Front End Libraries"
 
 # Icons
 icons:
@@ -36,5 +37,41 @@ featured: true
 ---
 
 <!-- Description and details -->
-<p class="fs-5 fw-light">{{ page.desc }}</p>
-<p>Placeholder text.</p>
+<section class="container-fluid main-section">
+  <h2 class="{{ site.subheading }}">Project Details</h2>
+  <p class="fs-5 fw-light">{{ page.desc }}</p>
+  <p>This project was a turning point for me during the freeCodeCamp curriculum. Working with a front-end library like React (as opposed to pure HTML/CSS designs or JavaScript console programming) gave me much better insight into what professional web development can look like. I very much enjoyed working on this one, and I think part of that is because I enjoy working with React!</p>
+  <p>I did also enjoy scouring the web for quotes from pop culture. The project specifications did not require any specific quote pool to be used, so I thought I would make it contain quotes from an array of fictional characters that I could hand-pick. I even decided to add supplemental images for each character's quote as a handy reference.</p>
+  <p class="fw-bold mb-1">Relevant links:</p>
+  <ul>
+    <li><a class="external-link" href="https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine">Random Quote Machine project specifications</a></li>
+    <li><a class="external-link" href="https://www.freecodecamp.org/learn/front-end-development-libraries/">Front End Development Libraries certification track</a></li>
+  </ul>
+</section>
+
+<!-- Related projects -->
+<section class="container-fluid main-section">
+  <h2 class="{{ site.subheading }}">Related Projects</h2>
+  <p class="fs-5 fw-light">This is certification project <span class="fw-bold">1 of 5</span> in the <a class="external-link" href="https://www.freecodecamp.org/learn/front-end-development-libraries/">Front End Development Libraries track</a> at freeCodeCamp. Each of my project submissions in this track is linked below. Note that I am still working through this particular track, so some submissions may not yet be present.</p>
+  <div class="row row-cols-1 row-cols-xl-2 mx-2 my-3">
+    {% assign related_projects = site.projects | where: "related", "FCC Front End Libraries" | sort: date %}
+    {% for project in related_projects %}
+      <div class="col-11 col-xl-5 mx-auto ms-xl-0 me-xl-5 my-2 ps-3 pe-4 py-3 project-item">
+        <a href={{ project.url | relative_url }} class="stretched-link"></a>
+        <div class="d-flex justify-content-between align-items-start">
+          <div>
+            {% assign shortened_date = project.date | date_to_string | split: " " | shift | join: " " %}
+            <p class="fs-5 mb-0">{{ project.title }}</p>
+            <p><small class="fw-light text-body-secondary">{{ shortened_date }}</small></p>
+          </div>
+          <div class="fs-4 text-center">
+            {% for icon in project.icons %}
+              &nbsp;<span class="{{ icon }}"></span>&nbsp;
+            {% endfor %}
+          </div>
+        </div>
+        <p>{{ project.desc }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>

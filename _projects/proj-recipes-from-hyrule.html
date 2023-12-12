@@ -13,6 +13,7 @@ icons:
   - "fa-solid fa-cloud-bolt"
   - "fa-brands fa-html5"
   - "fa-brands fa-css3"
+  - "fa-brands fa-git"
 
 # Preview image metadata
 img_src: "preview-recipes-from-hyrule.png"
@@ -33,5 +34,16 @@ featured: true
 ---
 
 <!-- Description and details -->
-<p class="fs-5 fw-light">{{ page.desc }}</p>
-<p>Placeholder text.</p>
+<section class="container-fluid main-section">
+  <h2 class="{{ site.subheading }}">Project Details</h2>
+  <p class="fs-5 fw-light">{{ page.desc }}</p>
+  <p>The Odin Project places immense focus on working in your own environment and overcoming any related logistical hurdles. For my first project, I felt that this should be the main focus&mdash;I had never worked with Git before, and I already had prior HTML/CSS experience from freeCodeCamp certifications.</p>
+  {% assign survey_form_project = site.projects | find: "title", "Survey Form" %}
+  <p>That said, I still ended up with a website that I like! I incorporated content from <span class="fst-italic">The Legend of Zelda: Tears of the Kingdom</span> (wait... <a class="external-link" href={{ survey_form_project.url | relative_url }}>haven't I done that before</a>?) to devise a simple recipe index, featuring three in-game recipes.</p>
+  <p class="fw-bold mb-1">Relevant links:</p>
+  <ul>
+    <li><a class="external-link" href="https://www.theodinproject.com/lessons/foundations-recipes">Project: Recipes | The Odin Project</a></li>
+    <li><a class="external-link" href="https://www.theodinproject.com/paths/foundations/courses/foundations">Course: Foundations | The Odin Project</a></li>
+    <li><a class="external-link" href="https://www.zelda.com/tears-of-the-kingdom/"><span class="fst-italic">The Legend of Zelda: Tears of the Kingdom</span> official website</a></li>
+  </ul>
+</section>
