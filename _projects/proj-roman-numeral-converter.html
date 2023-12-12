@@ -8,6 +8,7 @@ date: 2023-09-13
 desc: "JavaScript implementation of a function that converts a base-10 integer to its Roman numeral counterpart."
 type: "freeCodeCamp Certification Project"
 related: "FCC JS Algorithms"
+related_key: 2
 
 # Icons
 icons:
@@ -43,7 +44,7 @@ link_site: "CodePen"
   <p class="fw-bold mb-1">Relevant links:</p>
   <ul>
     <li><a class="external-link" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/roman-numeral-converter">Roman Numeral Converter project specifications</a></li>
-    <li><a class="external-link" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/">JavaScript Algorithms & Data Structures certification track</a></li>
+    <li><a class="external-link" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/">JavaScript Algorithms and Data Structures certification track</a></li>
   </ul>
 </section>
 
@@ -52,7 +53,7 @@ link_site: "CodePen"
   <h2 class="{{ site.subheading }}">Related Projects</h2>
   <p class="fs-5 fw-light">This is certification project <span class="fw-bold">2 of 5</span> in the <a class="external-link" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/">JavaScript Algorithms and Data Structures track</a> at freeCodeCamp. Each of my project submissions in this track is linked below.</p>
   <div class="row row-cols-1 row-cols-xl-2 mx-2 my-3">
-    {% assign related_projects = site.projects | where: "related", "FCC JS Algorithms" | sort: date %}
+    {% assign related_projects = site.projects | where: "related", "FCC JS Algorithms" | sort: "related_key" %}
     {% for project in related_projects %}
       <div class="col-11 col-xl-5 mx-auto ms-xl-0 me-xl-5 my-2 ps-3 pe-4 py-3 project-item">
         <a href={{ project.url | relative_url }} class="stretched-link"></a>

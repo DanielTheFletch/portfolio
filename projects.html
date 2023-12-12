@@ -3,7 +3,7 @@ title: Project Work
 ---
 
 <!-- Helper variables -->
-{% assign featured_projects = site.projects | where: "featured", true | sort: date | reverse %}
+{% assign featured_projects = site.projects | where: "featured", true | sort: "featured_key" %}
 {% assign all_projects = site.projects | sort: date | reverse %}
 
 <!-- Page heading -->
