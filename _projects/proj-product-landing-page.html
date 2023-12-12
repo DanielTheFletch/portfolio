@@ -45,7 +45,7 @@ link_site: "CodePen"
 <!-- Related projects -->
 <section class="container-fluid main-section">
   <h2 class="{{ site.subheading }}">Related Projects</h2>
-  <p class="fs-5 fw-light">This is certification project <span class="fw-bold">4 of 5</span> in the Responsive Web Design track at freeCodeCamp. Every project in this track is linked below.</p>
+  <p class="fs-5 fw-light">This is certification project <span class="fw-bold">4 of 5</span> in the <a class="external-link" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Responsive Web Design track</a> at freeCodeCamp. Each of my project submissions in this track is linked below.</p>
   <div class="row row-cols-1 row-cols-xl-2 mx-2 my-3">
     {% assign related_projects = site.projects | where: "related", "Responsive Web Design" | sort: date %}
     {% for project in related_projects %}
