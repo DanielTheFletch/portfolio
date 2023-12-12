@@ -193,3 +193,8 @@ section {
     box-shadow: 0.25rem 0.25rem 0.5rem $tertiary;
     transition: box-shadow 125ms ease-in-out;
 }
+
+.project-thumbnail {
+    border: 0.5rem double $tertiary;
+    box-shadow: 0.35rem 0.35rem 0.5rem $dark;
+}
