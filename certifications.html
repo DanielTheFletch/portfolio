@@ -11,7 +11,8 @@ title: Certifications
 {% for cert_type in site.data.certifications %}
   <section class="container-fluid main-section">
     <h2 class="{{ site.subheading }}">{{ cert_type.title }}</h2>
-    {% assign certs = cert_type.certs | reverse %}
+    <p class="fs-5 fw-light mt-0 mb-3">{{ cert_type.subtitle }}</p>
+    {% assign certs = cert_type.certs | sort: "date" | reverse %}
     {% for cert in certs %}
       <div class="row row-cols-2">
         <div class="col">
@@ -24,7 +25,8 @@ title: Certifications
           <p class="fs-6 mb-1">Awarded by {{ cert.org }}</p>
         </div>
         <div class="col text-end">
-          <p class="fs-5 fw-light">{{ cert.date }}</p>
+          {% assign shortened_date = cert.date | date_to_long_string | split: " " | shift | join: " " %}
+          <p class="fs-5 fw-light">{{ shortened_date }}</p>
         </div>
       </div>
       <div class="row row-cols-1 mb-3">
