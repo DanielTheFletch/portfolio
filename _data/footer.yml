@@ -3,13 +3,13 @@
 # Site information
 site-info:
   author: 
-    prefix: "&copy; 2023"
+    prefix: "Copyright &copy; 2023"
     phrase: "Daniel Fletcher"
   version:
-    prefix: "Daniel's Online Portfolio"
+    prefix: "Daniel Fletcher's Portfolio"
     phrase: 1.0.0
   license:
-    prefix: "Site licensed under"
+    prefix: "Licensed under the"
     phrase: "MIT License"
     link: "https://en.wikipedia.org/wiki/MIT_License"
   repository:
@@ -17,7 +17,7 @@ site-info:
     phrase: "site GitHub Repository"
     link: "https://github.com/DanielTheFletch/portfolio"
   host:
-    prefix: "Hosted on"
+    prefix: "Hosted and served on"
     phrase: "GitHub Pages"
     link: "https://docs.github.com/en/pages"
 

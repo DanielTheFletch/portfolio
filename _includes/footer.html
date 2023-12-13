@@ -9,19 +9,19 @@
           {{ info.author.prefix }} {{ info.author.phrase }}
         </span>
         <li class="footer-item-info">
-          {{ info.version.prefix }} v{{ info.version.phrase }}.
-        </li>
-        <li class="footer-item-info">
-          {{ info.license.prefix }}
-          <a class="footer-link-info" href={{ info.license.link }}>{{ info.license.phrase }}</a>.
-        </li>
-        <li class="footer-item-info">
-          {{ info.repository.prefix }}
-          <a class="footer-link-info" href={{ info.repository.link }}>{{ info.repository.phrase }}</a>.
+          {{ info.version.prefix }} <span class="fw-bold text-primary-emphasis">v{{ info.version.phrase }}</span>
         </li>
         <li class="footer-item-info">
           {{ info.host.prefix }}
-          <a class="footer-link-info" href={{ info.host.link }}>{{ info.host.phrase }}</a>.
+          <a class="footer-link-info" href={{ info.host.link }}>{{ info.host.phrase }}</a>
+        </li>
+        <li class="footer-item-info">
+          {{ info.repository.prefix }}
+          <a class="footer-link-info" href={{ info.repository.link }}>{{ info.repository.phrase }}</a>
+        </li>
+        <li class="footer-item-info">
+          {{ info.license.prefix }}
+          <a class="footer-link-info" href={{ info.license.link }}>{{ info.license.phrase }}</a>
         </li>
       </ul>
     </div>
