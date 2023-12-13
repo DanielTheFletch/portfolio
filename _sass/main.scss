@@ -112,6 +112,10 @@ section {
     transition-timing-function: ease-in;
 }
 
+#contact-info {
+    border-top: 0.6rem ridge $tertiary;
+}
+
 
 /* Activity posts */
 .activity-post {

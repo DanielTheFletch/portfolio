@@ -3,7 +3,7 @@
   <div class="container-fluid">
 
     <!-- Navbar title and collapse toggle for responsiveness -->
-    <span class="navbar-brand text-white fw-bolder">Daniel's Online Portfolio</span>
+    <span class="navbar-brand text-white fw-bolder">Daniel Fletcher's Portfolio</span>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -14,17 +14,17 @@
 
         <!-- Add each button and correctly label current page -->
         {% for item in site.data.navigation %}
-            <li class="nav-item mx-lg-2">
-              {% if page.url == item.link %}
-                <a href="#" class="nav-link active text-white" aria-current="page">
-                  <i class="{{ item.icon }}"></i>&nbsp;&nbsp;{{ item.name }}
-                </a>
-              {% else %}
-                <a href={{ item.link | relative_url }} class="nav-link inactive text-white">
-                  <i class="{{ item.icon }}"></i>&nbsp;&nbsp;{{ item.name }}
-                </a>
-              {% endif %}
-            </li>
+          <li class="nav-item mx-lg-2">
+            {% if page.url == item.link %}
+              <a href="#" class="nav-link active text-white" aria-current="page">
+                <i class="{{ item.icon }}"></i>&nbsp;&nbsp;{{ item.name }}
+              </a>
+            {% else %}
+              <a href={{ item.link | relative_url }} class="nav-link inactive text-white">
+                <i class="{{ item.icon }}"></i>&nbsp;&nbsp;{{ item.name }}
+              </a>
+            {% endif %}
+          </li>
         {% endfor %}
 
       </ul>
