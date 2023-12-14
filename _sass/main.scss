@@ -12,6 +12,67 @@ section {
 }
 
 
+/* Animations */
+@keyframes hero-flair-animation {
+    0% { opacity: 0;  transform: rotate(0deg) scale(1); }
+    10% { opacity: 0.5;  transform: rotate(90deg) scale(1.5); }
+    20% { opacity: 1;  transform: rotate(180deg) scale(2); }
+    30% { opacity: 1;  transform: rotate(270deg) scale(2); }
+    40% { opacity: 1;  transform: rotate(360deg) scale(2); }
+    50% { opacity: 0.5;  transform: rotate(540deg) scale(1.5); }
+    60% { opacity: 0;  transform: rotate(720deg) scale(1); }
+    70% { opacity: 0;  transform: rotate(0deg) scale(1); }
+    80% { opacity: 0;  transform: rotate(0deg) scale(1); }
+    90% { opacity: 0;  transform: rotate(0deg) scale(1); }
+    100% { opacity: 0;  transform: rotate(0deg) scale(1); }
+}
+
+@keyframes hero-flair-animation-reverse {
+    0% { opacity: 0;  transform: rotate(0deg) scale(1); }
+    10% { opacity: 0.5;  transform: rotate(-90deg) scale(1.5); }
+    20% { opacity: 1;  transform: rotate(-180deg) scale(2); }
+    30% { opacity: 1;  transform: rotate(-270deg) scale(2); }
+    40% { opacity: 1;  transform: rotate(-360deg) scale(2); }
+    50% { opacity: 0.5;  transform: rotate(-540deg) scale(1.5); }
+    60% { opacity: 0;  transform: rotate(-720deg) scale(1); }
+    70% { opacity: 0;  transform: rotate(0deg) scale(1); }
+    80% { opacity: 0;  transform: rotate(0deg) scale(1); }
+    90% { opacity: 0;  transform: rotate(0deg) scale(1); }
+    100% { opacity: 0;  transform: rotate(0deg) scale(1); }
+}
+
+@mixin hero-flair($animation-name, $delay-length) {
+    animation: $animation-name 4s linear infinite;
+    animation-delay: $delay-length;
+    color: $secondary-border-subtle;
+    opacity: 0;
+}
+
+.hero-flair-gear-1 {
+    @include hero-flair(hero-flair-animation, 0ms);
+}
+
+.hero-flair-gear-2 {
+    @include hero-flair(hero-flair-animation, 250ms);
+}
+
+.hero-flair-gear-3 {
+    @include hero-flair(hero-flair-animation, 500ms);
+}
+
+.hero-flair-gear-4 {
+    @include hero-flair(hero-flair-animation-reverse, 500ms);
+}
+
+.hero-flair-gear-5 {
+    @include hero-flair(hero-flair-animation-reverse, 250ms);
+}
+
+.hero-flair-gear-6 {
+    @include hero-flair(hero-flair-animation-reverse, 0ms);
+}
+
+
 /* General color theming */
 .bg-dark {
     background-color: $dark;
