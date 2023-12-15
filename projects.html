@@ -19,7 +19,7 @@ title: Project Work
       <div class="row featured-item text-secondary-emphasis mt-4 mb-3 px-3 py-4">
         <a href={{ project.url | relative_url }} class="stretched-link"></a>
         <div class="col-lg-4 d-flex justify-content-center align-items-center">
-          <img src="{{"/assets/img/proj-previews/" | absolute_url}}{{ project.img_src }}" 
+          <img src="{{ project.img_src | prepend: "/assets/img/proj-previews/" | relative_url }}" 
                class="img-fluid rounded mb-4 mb-lg-0 shadow" 
                alt="{{ project.img_alt }}">
         </div>
