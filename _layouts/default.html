@@ -5,9 +5,15 @@
     <link href={{"/assets/css/styles.css" | relative_url }} rel="stylesheet" />
     <link href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" rel="stylesheet" />
 
-    <!-- Site metadata -->
+    <!-- Basic metadata -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Social media preview metadata -->
+    <meta property="og:title" content="Daniel Fletcher's Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={{ "/assets/img/portfolio-site-preview.png" | relative_url }} />
+    <meta property="og:url" content={{ "/" | absolute_url }} />
 
     <!-- Dynamic page title -->
     <title>{{ page.title }}</title>
