@@ -28,9 +28,9 @@ defaults:
       layout: "default"
 
 # GitHub Pages compatibility
-title: "Jekyll Test"
-url: "https://danielthefletch.github.io"
-baseurl: "/portfolio"
+title: Daniel Fletcher's Portfolio
+url: https://danielthefletch.github.io
+baseurl: /portfolio
 
 # SASS defaults
 sass:
