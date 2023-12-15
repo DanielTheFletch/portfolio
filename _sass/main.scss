@@ -98,7 +98,7 @@ section {
     border-top: 0.125rem solid $primary;
 }
 
-.active, .inactive:hover {
+.active, .inactive:hover, .inactive:active {
     border-bottom: 0.125rem ridge $white;
     text-shadow: 0.05rem 0.05rem 0.175rem $dark;
 }
@@ -163,7 +163,7 @@ section {
     transition-timing-function: ease-out;
 }
 
-.contact-item:hover {
+.contact-item:hover, .contact-item:active {
     border-bottom: 0.275rem groove $tertiary;
     border-radius: 0.25rem;
     color: $tertiary;
@@ -212,7 +212,8 @@ section {
     color: $white;
 }
 
-.external-link:hover, .external-link-flipped:hover {
+.external-link:hover, .external-link-flipped:hover,
+.external-link:active, .external-link-flipped:active {
     color: $tertiary;
 }
 
@@ -242,7 +243,7 @@ section {
     transition: box-shadow 250ms ease-in-out;
 }
 
-.featured-item:hover {
+.featured-item:hover, .featured-item:active {
     background-image: var(--bs-gradient);
     box-shadow: 0.5rem 0.5rem 1rem $dark;
     transition: box-shadow 250ms ease-in-out;
@@ -254,7 +255,7 @@ section {
     transition: box-shadow 125ms ease-in-out;
 }
 
-.project-item:hover {
+.project-item:hover, .project-item:active {
     box-shadow: 0.25rem 0.25rem 0.5rem $tertiary;
     transition: box-shadow 125ms ease-in-out;
 }

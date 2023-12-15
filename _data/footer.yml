@@ -13,8 +13,8 @@ site-info:
     phrase: "MIT License"
     link: "https://en.wikipedia.org/wiki/MIT_License"
   repository:
-    prefix: "Code available on"
-    phrase: "site GitHub Repository"
+    prefix: "Source code available at"
+    phrase: "site GitHub Repo"
     link: "https://github.com/DanielTheFletch/portfolio"
   host:
     prefix: "Hosted and served on"
