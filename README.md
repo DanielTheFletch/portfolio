@@ -1,7 +1,7 @@
-# Daniel Fletcher's Online Portfolio
+# Daniel Fletcher's Portfolio
 
-Welcome to the repository for [my online portfolio website](#), a static site hosted on GitHub Pages.
-Check out the website itself if you want to view my portfolio proper; check out the code
+Welcome to the repository for [my online portfolio](#), a static website hosted on GitHub Pages.
+Check out the website itself if you want to view my portfolio proper; check out the source code
 here in this repository if you want to investigate the implementation details!
 
 
@@ -16,17 +16,28 @@ code in this repository.
 ## My portfolio, at a glance
 
 My portfolio website is divided into six main sections:
-- **[About](#)** &ndash; Learn about me, both personally and professionally. You can also find my primary contact information here, as well as a select few featured projects and activity posts.
-- **[Activity](#)** &ndash; A blog of sorts that also serves as a changelog for my portfolio. I plan to add posts here any time I update the site, whether that be adding new projects, implementing new features, or working in bug fixes.
-- **[Certifications](#)** &ndash; Check out all of the certifications I have earned so far in my computer science journey, complete with links to the certifications themselves.
-- **[Profiles](#)** &ndash; Interested in my online presence beyond my primary contact info? Look no further! All of my relevant online profiles are listed here, along with an indication as to whether I am currently active for each profile.
-- **[Projects](#)** &ndash; Take a look at the myriad of projects I have worked on, ranging from academic submissions for Harvard to personal passion projects. This page contains a rotating selection of three featured projects and a comprehensive list of all my past projects.
-- **[Resources](#)** &ndash; Look into some of the *incredible* resources that have helped me get to where I am now. All relevant links included.
+- **[About](#)** &ndash; Learn about me, both personally and professionally. You can also find my primary contact
+information here, as well as a brief walkthrough of the site's main pages&mdash;the same thing you're reading right
+now!
+- **[Activity](#)** &ndash; A blog of sorts that also serves as a changelog for my portfolio. I aim to create new
+posts whenever I update the site, whether that be adding new projects, implementing new features, or working in key
+bug fixes.
+- **[Projects](#)** &ndash; Take a look at the multitude of projects I have worked on, ranging from Harvard
+University academic submissions to personal passion projects. This page contains a rotating selection of three
+featured projects and a comprehensive index of all my past project work.
+- **[Certifications](#)** &ndash; Check out all the certifications I have earned so far in my computer science
+journey, complete with links to the corresponding certification credentials.
+- **[Links](#)** &ndash; All of my relevant online profiles are listed here, including those found on learning
+sites, networking platforms, and the like.
+- **[Resources](#)** &ndash; Look into some of the *incredible* resources that have helped me get to where I am now.
+Seriously, I would not be where I am today without these resources and the amazing people behind them. All relevant
+links included.
 
 
 ## Technologies used
 
-Below is a listing of the technologies used to power my portfolio, alongside links corresponding to their documentation.
+Below is a listing of the core technologies used to power my portfolio, along with links to their corresponding
+documentation.
 
 | Technologies | Relevant links |
 | :----------- | -------------: |
@@ -40,4 +51,9 @@ Below is a listing of the technologies used to power my portfolio, alongside lin
 
 ## Site information
 
-Copyright &copy; 2023 Daniel Fletcher • build v1.0.0 • last updated 20 Nov 2023
+Daniel Fletcher's Portfolio **v1.0.0**  
+Hosted and served on [GitHub Pages](https://docs.github.com/en/pages)  
+Source code available at [site GitHub Repo](https://github.com/DanielTheFletch/portfolio)  
+Licensed under the [MIT License](./LICENSE.md)  
+
+Copyright &copy; 2023 Daniel Fletcher
