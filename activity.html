@@ -16,7 +16,8 @@ title: Recent Activity
       <a href={{ latest.url | relative_url }} class="stretched-link"></a>
       <div class="col">
         <p class="fs-4 fw-bold mb-0">{{ latest.title }}</p>
-        <p class="fw-light mt-0">Written by Daniel Fletcher on {{ latest.date | date_to_long_string }}</p>
+        <p class="fw-light my-0">Written by Daniel Fletcher</p>
+        <p class="fw-light mt-0">{{ latest.date | date_to_long_string }}</p>
         <p>{{ latest.excerpt }}</p>
         <i class="fa-solid fa-ellipsis mb-4"></i>
       </div>
@@ -27,6 +28,6 @@ title: Recent Activity
 <!-- Post history -->
 <section class="container-fluid main-section">
   <h2 class="{{ site.subheading }}">Post History</h2>
-  <p class="fs-5 fw-light mt-0 mb-4">More content coming soon!</p>
-  <p class="mb-5 pb-5">As soon as any subsequent activity posts are made, the remaining post history will show up here.</p>
+  <p class="fs-5 fw-bold text-primary-emphasis mt-3 mb-1">More content coming soon!</p>
+  <p>Whenever the next activity post comes to fruition, this section of the page will populate with a complete backlog of previous posts.</p>
 </section>
