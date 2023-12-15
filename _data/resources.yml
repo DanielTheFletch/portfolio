@@ -1,5 +1,5 @@
 - title: "Educational Resources"
-  subtitle: "Various learning institutions and organizations that have been instrumental to my professional, personal, and academic growth."
+  subtitle: "A handful of learning institutions and organizations that have been instrumental to my professional, personal, and academic growth."
   resources:
     - name: "Harvard CS50"
       blurb: "Harvard University's one-of-a-kind \"Introduction to Computer Science\" course taught by professor <a class=\"external-link\" href=\"https://www.linkedin.com/in/malan/\">David J. Malan</a>, as well as the many other constituent courses offered under the CS50 umbrella. The online course offerings are completely free to enroll in (seriously), and they offer an unparalleled learning experience for CS newcomers and veterans alike. I am currently working on my final projects for CS50x and CS50P, and I hope to enroll in more CS50 courses come 2024!"
@@ -18,7 +18,7 @@
         - name: "Main Curriculum"
           href: "https://www.freecodecamp.org/learn/"
     - name: "The Odin Project"
-      blurb: "This free and open-source learning hub focuses specifically on honing web development skills. After taking the required Foundations course, users are given the option of two learning paths: the Full-Stack Ruby on Rails path and the Full-Stack JavaScript path. Both paths cover an expansive amount of web development topics, each merely uses its own language of choice. I am currently still working through the Foundations course, but I am aiming to eventually explore the Ruby on Rails path."
+      blurb: "This free and open-source learning hub focuses specifically on honing web development skills. After taking the required Foundations course, users are given the option of two learning paths: the Full-Stack Ruby on Rails path and the Full-Stack JavaScript path. Both paths cover an expansive amount of web development topics; each merely uses its own language of choice. I am currently still working through the Foundations course, but I aim to ultimately explore the Ruby on Rails path!"
       links:
         - name: "Official Website"
           href: "https://www.theodinproject.com/"
@@ -27,17 +27,17 @@
         - name: "Foundations Course"
           href: "https://www.theodinproject.com/paths/foundations/courses/foundations"
 - title: "Job Boards"
-  subtitle: "A wide array of online job boards I have used frequently throughout the course of my job search."
+  subtitle: "A variety of online job boards I have used frequently throughout the course of my job search."
   resources:
     - name: "General Job Search"
-      blurb: "Catch-all job boards that promote connections between job seekers and hiring managers alike. For these sites, I strive to maintain an active presence and to regularly update my profile with the latest and most relevant information."
+      blurb: "Catch-all job boards that promote connections between job seekers and hiring managers alike."
       links:
         - name: "LinkedIn"
           href: "https://www.linkedin.com/"
         - name: "Otta"
           href: "https://app.otta.com/"
     - name: "Jobs in Game Development"
-      blurb: "Video game development is one of my greatest personal interests. As I have looked for jobs in the industry, I have found multiple job boards and collections specifically catered to game development. Huge shoutout to <a class=\"external-link\" href=\"https://www.linkedin.com/in/amirsatvat/\">Amir Satvat</a>, a steadfast champion of game developers and the well-being of the industry at large."
+      blurb: "Video game development is one of my greatest personal interests. As I have looked for jobs in the industry, I have found multiple job boards and collections specifically catered to game development. Huge shoutout to <a class=\"external-link\" href=\"https://www.linkedin.com/in/amirsatvat/\">Amir Satvat</a>, an unwavering champion of game developers and the well-being of the industry at large."
       links:
         - name: "Work with Indies"
           href: "https://www.workwithindies.com/"
@@ -46,10 +46,10 @@
         - name: "Amir Satvat's Comprehensive List of Games Jobs"
           href: "https://www.dropbox.com/s/6icqqopmsp39ool/221119%20-%20Games%20Jobs.xlsx"
 - title: "References and Documentation"
-  subtitle: "Accomplishing any technical task in the world of computer science is made far easier with reference sites and official documentation handy. While I have used many such references over the past few years, below are the resources I continue to use most frequently."
+  subtitle: "A wide array of handy technical references that I use <span class=\"fst-italic\">all the time</span>."
   resources:
     - name: "Quick Reference"
-      blurb: "Simple and powerful sites for quick retrieval of specific information. These sites can greatly reduce headaches for some basic tasks like deciphering an unfamiliar file type or double-checking a particular keyboard shortcut in Visual Studio Code."
+      blurb: "Simple and powerful sites for speedy retrieval of specific information. These sites can greatly reduce headaches for some basic tasks like deciphering an unfamiliar file type or double-checking a particular keyboard shortcut in Visual Studio Code."
       links:
         - name: "ASCII Table"
           href: "https://www.asciitable.com/"
@@ -59,15 +59,17 @@
           href: "https://www.markdownguide.org/cheat-sheet/"
         - name: "VS Code Keyboard Shortcuts (Windows)"
           href: "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf"
-    - name: "Emojis and Text Icons"
-      blurb: "Incorporating emojis and text icons into software development projects has become more and more popular over the past decade. These two sites are my go-to resources for working with emojis and text icons in my own project work."
+    - name: "Fonts and Typefaces"
+      blurb: "Whenever I'm working with alternate typefaces or even just scouting beyond the default font choices (I die a little inside every time I use 11pt Calibri or Arial), I have a select few resources that I gravitate towards for guidance."
       links:
         - name: "Emojipedia"
           href: "https://emojipedia.org/"
         - name: "FontAwesome Icons"
           href: "https://fontawesome.com/icons"
+        - name: "Google Fonts"
+          href: "https://fonts.google.com/"
     - name: "Documentation Lookup: DevDocs"
-      blurb: "Maintained by the aforementioned organization <a class=\"external-link\" href=\"https://www.freecodecamp.org/\">freeCodeCamp</a>, DevDocs streamlines the documentation lookup process by gathering any and all reference data you may need and consolidating it into a smoother, more singular experience."
+      blurb: "Maintained by the aforementioned organization <a class=\"external-link\" href=\"https://www.freecodecamp.org/\">freeCodeCamp</a>, DevDocs streamlines the documentation lookup process by gathering any and all reference data you may need and consolidating it into a smoother, more singular experience. Highly recommended if you're working on a project with a bulky tech stack and don't want to have 37 different tabs open at the same time."
       links:
         - name: "DevDocs"
           href: "https://devdocs.io/"
