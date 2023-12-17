@@ -31,7 +31,7 @@ link_site: "CodePen"
 ---
 
 <!-- Description and details -->
-<section class="container-fluid main-section">
+<section class="container main-section">
   <h2 class="site-heading">Project Details</h2>
   <p class="site-subheading">{{ page.desc }}</p>
   <p>This faux online merch store is loosely based around the anime series <span class="fst-italic">Attack on Titan</span>, featuring details related to its world and characters. I found the idea of designing a product landing page for various fictional gadgets to be an intriguing one. I also thought using the world of <span class="fst-italic">Attack on Titan</span> in particular would create somewhat of an absurd juxtaposition, if only because of how far removed the internet (let alone eCommerce) is from that story.</p>
@@ -45,10 +45,10 @@ link_site: "CodePen"
 </section>
 
 <!-- Related projects -->
-<section class="container-fluid main-section">
+<section class="container main-section">
   <h2 class="site-heading">Related Projects</h2>
-  <p class="site-subheading">This is certification project <span class="fw-bold">4 of 5</span> in the <a class="external-link" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Responsive Web Design track</a> at freeCodeCamp. Each of my project submissions in this track is linked below.</p>
-  <div class="row row-cols-1 row-cols-xl-2 mx-2 my-3">
+  <p class="mt-2">This is certification project <span class="fw-bold">4 of 5</span> in the <a class="external-link" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Responsive Web Design track</a> at freeCodeCamp. Each of my project submissions in this track is linked below.</p>
+  <div class="row row-cols-1 row-cols-xl-2 my-3">
     {% assign related_projects = site.projects | where: "related", "Responsive Web Design" | sort: "related_key" %}
     {% for project in related_projects %}
       <div class="col-11 col-xl-5 mx-auto ms-xl-0 me-xl-5 my-2 ps-3 pe-4 py-3 project-item">

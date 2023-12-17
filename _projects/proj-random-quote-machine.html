@@ -39,7 +39,7 @@ featured_key: 3
 ---
 
 <!-- Description and details -->
-<section class="container-fluid main-section">
+<section class="container main-section">
   <h2 class="site-heading">Project Details</h2>
   <p class="site-subheading">{{ page.desc }}</p>
   <p>This project was a turning point for me during the freeCodeCamp curriculum. Working with a front-end library like React (as opposed to pure HTML/CSS designs or JavaScript console programming) gave me much better insight into what professional web development can look like. I very much enjoyed working on this one, and I think part of that is because I enjoy working with React!</p>
@@ -52,10 +52,10 @@ featured_key: 3
 </section>
 
 <!-- Related projects -->
-<section class="container-fluid main-section">
+<section class="container main-section">
   <h2 class="site-heading">Related Projects</h2>
-  <p class="site-subheading">This is certification project <span class="fw-bold">1 of 5</span> in the <a class="external-link" href="https://www.freecodecamp.org/learn/front-end-development-libraries/">Front End Development Libraries track</a> at freeCodeCamp. Each of my project submissions in this track is linked below. (Note that I am still working through this particular track, so some submissions may not yet be present.)</p>
-  <div class="row row-cols-1 row-cols-xl-2 mx-2 my-3">
+  <p class="mt-2">This is certification project <span class="fw-bold">1 of 5</span> in the <a class="external-link" href="https://www.freecodecamp.org/learn/front-end-development-libraries/">Front End Development Libraries track</a> at freeCodeCamp. Each of my project submissions in this track is linked below. (Note that I am still working through this particular track, so some submissions may not yet be present.)</p>
+  <div class="row row-cols-1 row-cols-xl-2 my-3">
     {% assign related_projects = site.projects | where: "related", "FCC Front End Libraries" | sort: "related_key" %}
     {% for project in related_projects %}
       <div class="col-11 col-xl-5 mx-auto ms-xl-0 me-xl-5 my-2 ps-3 pe-4 py-3 project-item">

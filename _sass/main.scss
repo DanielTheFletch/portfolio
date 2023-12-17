@@ -103,6 +103,11 @@ section {
     border-top: 0.6rem ridge $primary;
 }
 
+.page-heading h1 {
+    font-family: $titillium-web;
+    font-weight: 700;
+}
+
 
 /* Navigation and footer */
 .navbar-brand {

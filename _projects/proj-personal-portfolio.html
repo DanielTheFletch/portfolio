@@ -31,7 +31,7 @@ link_site: "CodePen"
 ---
 
 <!-- Description and details -->
-<section class="container-fluid main-section">
+<section class="container main-section">
   <h2 class="site-heading">Project Details</h2>
   <p class="site-subheading">{{ page.desc }}</p>
   <p>In a way, this was my portfolio before my portfolio. This certification project from freeCodeCamp called for developing a portfolio page, and I decided to focus the content of that portfolio on the freeCodeCamp work I had completed up to that point. It seemed like a fitting send of for the first certification course in the curriculum.</p>
@@ -44,10 +44,10 @@ link_site: "CodePen"
 </section>
 
 <!-- Related projects -->
-<section class="container-fluid main-section">
+<section class="container main-section">
   <h2 class="site-heading">Related Projects</h2>
-  <p class="site-subheading">This is certification project <span class="fw-bold">5 of 5</span> in the <a class="external-link" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Responsive Web Design track</a> at freeCodeCamp. Each of my project submissions in this track is linked below.</p>
-  <div class="row row-cols-1 row-cols-xl-2 mx-2 my-3">
+  <p class="mt-2">This is certification project <span class="fw-bold">5 of 5</span> in the <a class="external-link" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Responsive Web Design track</a> at freeCodeCamp. Each of my project submissions in this track is linked below.</p>
+  <div class="row row-cols-1 row-cols-xl-2 my-3">
     {% assign related_projects = site.projects | where: "related", "Responsive Web Design" | sort: "related_key" %}
     {% for project in related_projects %}
       <div class="col-11 col-xl-5 mx-auto ms-xl-0 me-xl-5 my-2 ps-3 pe-4 py-3 project-item">
