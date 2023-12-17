@@ -116,17 +116,10 @@ section {
 }
 
 .footer-item-list {
-    list-style-position: outside;
-    list-style-type: none;
     font-weight: 400;
 }
 
-.footer-link {
-    color: $black;
-    text-decoration: none;
-}
-
-.footer-link-info {
+.footer-link, .footer-link-info {
     color: $black;
 }
 

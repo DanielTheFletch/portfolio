@@ -3,7 +3,7 @@
 
     <!-- Site information -->
     <div class="col col-xl-5 my-2" id="footer-site-info">
-      <ul class="footer-item-list">
+      <ul class="footer-item-list list-unstyled">
         {% assign info = site.data.footer.site-info %}
         <span class="footer-title-info">
           {{ info.author.prefix }} {{ info.author.phrase }}
@@ -28,7 +28,7 @@
 
     <!-- Site links (same as navigation) -->
     <div class="col col-xl-2 my-2" id="footer-site-links">
-      <ul class="footer-item-list">
+      <ul class="footer-item-list list-unstyled">
         <span class="footer-title">Site Links</span>
         {% for item in site.data.navigation %}
           <li class="footer-item">
@@ -42,7 +42,7 @@
 
     <!-- Technology used -->
     <div class="col col-xl-2 my-2" id="footer-technology">
-      <ul class="footer-item-list">
+      <ul class="footer-item-list list-unstyled">
         <span class="footer-title">Technologies Used</span>
         {% for item in site.data.footer.technology %}
           <li class="footer-item">
@@ -56,7 +56,7 @@
 
     <!-- Contact information -->
     <div class="col col-xl-2 my-2" id="footer-contact">
-      <ul class="footer-item-list">
+      <ul class="footer-item-list list-unstyled">
         <span class="footer-title">Primary Contact</span>
         {% for item in site.data.footer.contact %}
           <li class="footer-item">
