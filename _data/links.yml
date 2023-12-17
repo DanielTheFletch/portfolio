@@ -17,14 +17,14 @@
   subtitle: "Check out my professional résumé and CV. Links will, in a new tab, open a PDF file shared publicly via Google Drive."
   items:
     - name: "Résumé"
-      display: "Résumé: Daniel Fletcher 2023"
+      display: "Résumé Daniel Fletcher 2023"
       icon: "fa-solid fa-file-pdf"
-      link: "#"
+      link: "https://drive.google.com/file/d/1w2AEzM1YzQeajZrdy7ZjQSZy1OANrFPf/view?usp=drive_link"
       is_external_link: true
     - name: "Curriculum Vitae"
-      display: "CV: Daniel Fletcher 2023"
+      display: "CV Daniel Fletcher 2023"
       icon: "fa-solid fa-file-pdf"
-      link: "#"
+      link: "https://drive.google.com/file/d/1_LWT8Ao3NQPwZOpaX-h34Z008wq0i_7R/view?usp=drive_link"
       is_external_link: true
 - title: "Online Learning"
   subtitle: "A selection of profiles from some of the online learning resources I use most. Visit these to get a look at some of my personal progress as a developer!"
