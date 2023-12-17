@@ -32,7 +32,7 @@
         <span class="footer-title">Site Links</span>
         {% for item in site.data.navigation %}
           <li class="footer-item">
-            <a href={{ item.link | relative_url }} class="footer-link">
+            <a href={{ item.link }} class="footer-link">
               {{ item.name }}
             </a>
           </li>
@@ -46,7 +46,7 @@
         <span class="footer-title">Technologies Used</span>
         {% for item in site.data.footer.technology %}
           <li class="footer-item">
-            <a href={{ item.link | relative_url }} class="footer-link">
+            <a href={{ item.link }} class="footer-link">
               {{ item.name }}
             </a>
           </li>
@@ -60,7 +60,7 @@
         <span class="footer-title">Primary Contact</span>
         {% for item in site.data.footer.contact %}
           <li class="footer-item">
-            <a href={{ item.link | relative_url }} class="footer-link">
+            <a href={{ item.link }} class="footer-link">
               {{ item.name }}
             </a>
           </li>

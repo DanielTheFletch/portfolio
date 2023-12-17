@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- Link CSS stylesheets -->
-    <link href={{"/assets/css/styles.css" | relative_url }} rel="stylesheet" />
+    <link href={{"/assets/css/styles.css" | absolute_url }} rel="stylesheet" />
     <link href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" rel="stylesheet" />
 
     <!-- Basic metadata -->
@@ -12,7 +12,7 @@
     <!-- Social media preview metadata -->
     <meta property="og:title" content="Daniel Fletcher's Portfolio" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content={{ "/assets/img/portfolio-site-preview.png" | relative_url }} />
+    <meta property="og:image" content={{ "../assets/img/portfolio-site-preview.png" }} />
     <meta property="og:url" content={{ "/" | absolute_url }} />
 
     <!-- Dynamic page title -->

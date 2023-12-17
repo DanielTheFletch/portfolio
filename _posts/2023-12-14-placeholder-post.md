@@ -32,30 +32,30 @@ Fletcher's Portfolio site.
 
 ##### **Core site pages**
 {% assign page_link = site.data.navigation[0].link %}
-- <a class="external-link fw-bold" href="{{ page_link | relative_url }}">Home</a> &ndash; Learn about
+- <a class="external-link fw-bold" href="{{ page_link }}">Home</a> &ndash; Learn about
 me, both personally and professionally. You can also find my primary contact information
 here, as well as a brief walkthrough of the site's main pages&mdash;that's what you're
 reading right now!
 {% assign page_link = site.data.navigation[1].link %}
-- <a class="external-link fw-bold" href="{{ page_link | relative_url }}">Activity</a> &ndash; A blog of
+- <a class="external-link fw-bold" href="{{ page_link }}">Activity</a> &ndash; A blog of
 sorts that also serves as a changelog for my portfolio. I aim to create new posts whenever
 I update the site, whether that be adding new projects, implementing new features, or
 working in key bug fixes.
 {% assign page_link = site.data.navigation[2].link %}
-- <a class="external-link fw-bold" href="{{ page_link | relative_url }}">Projects</a> &ndash; Take a look
+- <a class="external-link fw-bold" href="{{ page_link }}">Projects</a> &ndash; Take a look
 at the multitude of projects I have worked on, ranging from Harvard University academic
 submissions to personal passion projects. This page contains a rotating selection of three
 featured projects and a comprehensive index of all my past project work.
 {% assign page_link = site.data.navigation[3].link %}
-- <a class="external-link fw-bold" href="{{ page_link | relative_url }}">Certifications</a> &ndash; Check
+- <a class="external-link fw-bold" href="{{ page_link }}">Certifications</a> &ndash; Check
 out all the certifications I have earned so far in my computer science journey, complete
 with links to the corresponding certification credentials.
 {% assign page_link = site.data.navigation[4].link %}
-- <a class="external-link fw-bold" href="{{ page_link | relative_url }}">Links</a> &ndash; All of my
+- <a class="external-link fw-bold" href="{{ page_link }}">Links</a> &ndash; All of my
 relevant online profiles are listed here, including those found on learning sites,
 networking platforms, and the like.
 {% assign page_link = site.data.navigation[5].link %}
-- <a class="external-link fw-bold" href="{{ page_link | relative_url }}">Resources</a> &ndash; Look into
+- <a class="external-link fw-bold" href="{{ page_link }}">Resources</a> &ndash; Look into
 some of the *incredible* resources that have helped me get to where I am now. Seriously, I
 would not be where I am today without these resources and the amazing people behind them.
 All relevant links included.
@@ -64,43 +64,43 @@ All relevant links included.
 
 ##### **Starter pack of published projects**
 {% assign proj = site.projects | find: "name", "proj-survey-form.html" %}
-- <a class="external-link fw-bold" href="{{ proj.url | relative_url }}">{{ proj.title }}</a>
+- <a class="external-link fw-bold" href="{{ proj.url }}">{{ proj.title }}</a>
   &ndash; {{ proj.desc }}
 {% assign proj = site.projects | find: "name", "proj-tribute-page.html" %}
-- <a class="external-link fw-bold" href="{{ proj.url | relative_url }}">{{ proj.title }}</a>
+- <a class="external-link fw-bold" href="{{ proj.url }}">{{ proj.title }}</a>
   &ndash; {{ proj.desc }}
 {% assign proj = site.projects | find: "name", "proj-technical-documentation-page.html" %}
-- <a class="external-link fw-bold" href="{{ proj.url | relative_url }}">{{ proj.title }}</a>
+- <a class="external-link fw-bold" href="{{ proj.url }}">{{ proj.title }}</a>
   &ndash; {{ proj.desc }}
 {% assign proj = site.projects | find: "name", "proj-product-landing-page.html" %}
-- <a class="external-link fw-bold" href="{{ proj.url | relative_url }}">{{ proj.title }}</a>
+- <a class="external-link fw-bold" href="{{ proj.url }}">{{ proj.title }}</a>
   &ndash; {{ proj.desc }}
 {% assign proj = site.projects | find: "name", "proj-rgb-defender.html" %}
-- <a class="external-link fw-bold" href="{{ proj.url | relative_url }}">{{ proj.title }}</a>
+- <a class="external-link fw-bold" href="{{ proj.url }}">{{ proj.title }}</a>
   &ndash; {{ proj.desc }}
 {% assign proj = site.projects | find: "name", "proj-personal-portfolio.html" %}
-- <a class="external-link fw-bold" href="{{ proj.url | relative_url }}">{{ proj.title }}</a>
+- <a class="external-link fw-bold" href="{{ proj.url }}">{{ proj.title }}</a>
   &ndash; {{ proj.desc }}
 {% assign proj = site.projects | find: "name", "proj-palindrome-checker.html" %}
-- <a class="external-link fw-bold" href="{{ proj.url | relative_url }}">{{ proj.title }}</a>
+- <a class="external-link fw-bold" href="{{ proj.url }}">{{ proj.title }}</a>
   &ndash; {{ proj.desc }}
 {% assign proj = site.projects | find: "name", "proj-roman-numeral-converter.html" %}
-- <a class="external-link fw-bold" href="{{ proj.url | relative_url }}">{{ proj.title }}</a>
+- <a class="external-link fw-bold" href="{{ proj.url }}">{{ proj.title }}</a>
   &ndash; {{ proj.desc }}
 {% assign proj = site.projects | find: "name", "proj-caesars-cipher.html" %}
-- <a class="external-link fw-bold" href="{{ proj.url | relative_url }}">{{ proj.title }}</a>
+- <a class="external-link fw-bold" href="{{ proj.url }}">{{ proj.title }}</a>
   &ndash; {{ proj.desc }}
 {% assign proj = site.projects | find: "name", "proj-telephone-number-validator.html" %}
-- <a class="external-link fw-bold" href="{{ proj.url | relative_url }}">{{ proj.title }}</a>
+- <a class="external-link fw-bold" href="{{ proj.url }}">{{ proj.title }}</a>
   &ndash; {{ proj.desc }}
 {% assign proj = site.projects | find: "name", "proj-cash-register.html" %}
-- <a class="external-link fw-bold" href="{{ proj.url | relative_url }}">{{ proj.title }}</a>
+- <a class="external-link fw-bold" href="{{ proj.url }}">{{ proj.title }}</a>
   &ndash; {{ proj.desc }}
 {% assign proj = site.projects | find: "name", "proj-recipes-from-hyrule.html" %}
-- <a class="external-link fw-bold" href="{{ proj.url | relative_url }}">{{ proj.title }}</a>
+- <a class="external-link fw-bold" href="{{ proj.url }}">{{ proj.title }}</a>
   &ndash; {{ proj.desc }}
 {% assign proj = site.projects | find: "name", "proj-random-quote-machine.html" %}
-- <a class="external-link fw-bold" href="{{ proj.url | relative_url }}">{{ proj.title }}</a>
+- <a class="external-link fw-bold" href="{{ proj.url }}">{{ proj.title }}</a>
   &ndash; {{ proj.desc }}
 
 ---
