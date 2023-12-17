@@ -20,7 +20,7 @@
                 <i class="{{ item.icon }}"></i>&nbsp;&nbsp;{{ item.name }}
               </a>
             {% else %}
-              <a href={{ item.link }} class="nav-link inactive text-white">
+              <a href={{ item.link | relative_url }} class="nav-link inactive text-white">
                 <i class="{{ item.icon }}"></i>&nbsp;&nbsp;{{ item.name }}
               </a>
             {% endif %}

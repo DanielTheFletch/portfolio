@@ -50,7 +50,7 @@ link_site: "CodePen"
     {% assign related_projects = site.projects | where: "related", "FCC JS Algorithms" | sort: "related_key" %}
     {% for project in related_projects %}
       <div class="col-11 col-xl-5 mx-auto ms-xl-0 me-xl-5 my-2 ps-3 pe-4 py-3 project-item">
-        <a href={{ project.url }} class="stretched-link"></a>
+        <a href={{ project.url | relative_url }} class="stretched-link"></a>
         <div class="d-flex justify-content-between align-items-start">
           <div>
             {% assign shortened_date = project.date | date_to_string | split: " " | shift | join: " " %}

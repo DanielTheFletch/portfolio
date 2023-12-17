@@ -30,7 +30,7 @@ defaults:
 # GitHub Pages compatibility
 title: "Daniel Fletcher's Portfolio"
 url: "https://danielthefletch.github.io"
-baseurl: ""
+baseurl: "/portfolio"
 
 # SASS defaults
 sass:
