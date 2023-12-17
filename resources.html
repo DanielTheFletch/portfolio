@@ -9,9 +9,9 @@ title: Helpful Resources
 
 <!-- Resources by section -->
 {% for resource_type in site.data.resources %}
-  <section class="container-fluid main-section">
-    <h2 class="{{ site.subheading }}">{{ resource_type.title }}</h2>
-    <p class="fs-5 fw-light mt-0 mb-4">{{ resource_type.subtitle }}</p>
+  <section class="container main-section">
+    <h2 class="site-heading">{{ resource_type.title }}</h2>
+    <p class="site-subheading">{{ resource_type.subtitle }}</p>
     <div class="row row-cols-1">
       {% for resource in resource_type.resources %}
         <div class="col mb-3">

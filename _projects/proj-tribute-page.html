@@ -32,8 +32,8 @@ link_site: "CodePen"
 
 <!-- Description and details -->
 <section class="container-fluid main-section">
-  <h2 class="{{ site.subheading }}">Project Details</h2>
-  <p class="fs-5 fw-light">{{ page.desc }}</p>
+  <h2 class="site-heading">Project Details</h2>
+  <p class="site-subheading">{{ page.desc }}</p>
   <p>Radiohead has been a monumental force in the world of music, but they are also one of my personal all-time favorite bands (their album <span class="fst-italic">In Rainbows</span> might just be my favorite album ever). Choosing to focus the project on Radiohead helped me decide on some of the page's content, most notably the discography listing.</p>
   <p class="mb-1">If you're interested in giving them a listen, these are some of the Radiohead tracks I love most:</p>
   <ul class="mb-4">
@@ -55,8 +55,8 @@ link_site: "CodePen"
 
 <!-- Related projects -->
 <section class="container-fluid main-section">
-  <h2 class="{{ site.subheading }}">Related Projects</h2>
-  <p class="fs-5 fw-light">This is certification project <span class="fw-bold">2 of 5</span> in the <a class="external-link" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Responsive Web Design track</a> at freeCodeCamp. Each of my project submissions in this track is linked below.</p>
+  <h2 class="site-heading">Related Projects</h2>
+  <p class="site-subheading">This is certification project <span class="fw-bold">2 of 5</span> in the <a class="external-link" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Responsive Web Design track</a> at freeCodeCamp. Each of my project submissions in this track is linked below.</p>
   <div class="row row-cols-1 row-cols-xl-2 mx-2 my-3">
     {% assign related_projects = site.projects | where: "related", "Responsive Web Design" | sort: "related_key" %}
     {% for project in related_projects %}

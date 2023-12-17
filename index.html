@@ -22,9 +22,9 @@ title: Daniel Fletcher's Portfolio
 </section>
 
 <!-- About me -->
-<section class="container-fluid main-section pb-4" id="about-me">
-  <h2 class="{{ site.subheading }}">About Me</h2>
-  <div class="container-fluid mx-0 px-0">
+<section class="container main-section pb-4" id="about-me">
+  <h2 class="site-heading">About Me</h2>
+  <div class="container-fluid mx-0 mt-2 px-0">
     <div class="clearfix">
       <figure class="col-md-6 float-md-end mb-3 ms-md-3">
         <div class="ratio ratio-16x9">
@@ -41,9 +41,9 @@ title: Daniel Fletcher's Portfolio
 </section>
 
 <!-- Site walkthrough -->
-<section class="container-fluid pb-4" id="site-walkthrough">
-  <h2 class="{{ site.subheading }}">Site Walkthrough</h2>
-  <ul>
+<section class="container pb-4" id="site-walkthrough">
+  <h2 class="site-heading">Site Walkthrough</h2>
+  <ul class="mt-2">
     {% assign page_home = site.html_pages | find: "name", "index.html" %}
     <li class="mb-1"><a class="external-link fw-bold" href={{ page_home.url | relative_url }}>Home</a> &ndash; Learn about me, both personally and professionally. You can also find my primary contact information here, as well as a brief walkthrough of the site's main pages&mdash;that's what you're reading right now!</li>
     {% assign page_activity = site.html_pages | find: "name", "activity.html" %}
@@ -60,10 +60,10 @@ title: Daniel Fletcher's Portfolio
 </section>
 
 <!-- Contact information -->
-<section class="container-fluid bg-dark fg-light pb-3" id="contact-info">
-  <h2 class="{{ site.subheading }}">Contact Information</h2>
-  <p class="fs-5 fw-light mt-0 mb-4">Links will open in a new tab.</p>
-  <div class="container text-center">
+<section class="container-fluid bg-dark fg-light pb-3 text-center" id="contact-info">
+  <h2 class="site-heading">Contact Information</h2>
+  <p class="site-subheading">Links will open in a new tab.</p>
+  <div class="container">
     <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 my-3">
       {% for item in site.data.footer.contact %}
         <div class="col my-2">

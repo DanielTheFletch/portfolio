@@ -35,6 +35,3 @@ baseurl: "/portfolio"
 # SASS defaults
 sass:
   sass_dir: "/_sass"
-
-# Site-wide variables
-subheading: "h2 fw-bold mb-1 pt-0"

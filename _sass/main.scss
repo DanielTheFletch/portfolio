@@ -8,7 +8,23 @@
 
 section {
     padding-bottom: $spacer;
-    padding-top: ($spacer * 1.5);
+    padding-top: $spacer * 1.5;
+}
+
+
+/* Site headings */
+.site-heading {
+    font-family: $titillium-web;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.site-subheading {
+    font-family: $titillium-web;
+    font-size: 1.25rem;
+    margin-bottom: 1.125em;
+    margin-top: 0;
 }
 
 
@@ -146,8 +162,7 @@ section {
 /* Primary contact info on home page */
 .contact-item {
     color: $light;
-    font-family: $titillium-web;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: bolder;
     text-decoration: none;
     

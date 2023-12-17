@@ -32,8 +32,8 @@ link_site: "CodePen"
 
 <!-- Description and details -->
 <section class="container-fluid main-section">
-  <h2 class="{{ site.subheading }}">Project Details</h2>
-  <p class="fs-5 fw-light">{{ page.desc }}</p>
+  <h2 class="site-heading">Project Details</h2>
+  <p class="site-subheading">{{ page.desc }}</p>
   <p>Even though I picked up some HTML here and there during my university studies, it wasn't until this freeCodeCamp project that I truly started to hone my web development skills. This was my first ever project working with the likes of HTML and CSS, and it's been quite the journey since then!</p>
   <p>In the survey, you'll answer opinionated questions regarding the 2023 video game <span class="fst-italic">The Legend of Zelda: Tears of the Kingdom</span> from Nintendo. The game had recently released around the time of working on this project, and I was having such a good time with it that I wanted to incorporate it into my project work.</p>
   <p class="fw-bold mb-1">Relevant links:</p>
@@ -46,8 +46,8 @@ link_site: "CodePen"
 
 <!-- Related projects -->
 <section class="container-fluid main-section">
-  <h2 class="{{ site.subheading }}">Related Projects</h2>
-  <p class="fs-5 fw-light">This is certification project <span class="fw-bold">1 of 5</span> in the <a class="external-link" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Responsive Web Design track</a> at freeCodeCamp. Each of my project submissions in this track is linked below.</p>
+  <h2 class="site-heading">Related Projects</h2>
+  <p class="site-subheading">This is certification project <span class="fw-bold">1 of 5</span> in the <a class="external-link" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Responsive Web Design track</a> at freeCodeCamp. Each of my project submissions in this track is linked below.</p>
   <div class="row row-cols-1 row-cols-xl-2 mx-2 my-3">
     {% assign related_projects = site.projects | where: "related", "Responsive Web Design" | sort: "related_key" %}
     {% for project in related_projects %}

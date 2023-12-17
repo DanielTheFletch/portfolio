@@ -32,8 +32,8 @@ link_site: "CodePen"
 
 <!-- Description and details -->
 <section class="container-fluid main-section">
-  <h2 class="{{ site.subheading }}">Project Details</h2>
-  <p class="fs-5 fw-light">{{ page.desc }}</p>
+  <h2 class="site-heading">Project Details</h2>
+  <p class="site-subheading">{{ page.desc }}</p>
   <p>In a way, this was my portfolio before my portfolio. This certification project from freeCodeCamp called for developing a portfolio page, and I decided to focus the content of that portfolio on the freeCodeCamp work I had completed up to that point. It seemed like a fitting send of for the first certification course in the curriculum.</p>
   <p>While this project was not necessarily a precursor to my current portfolio, there are some noteworthy similarities, like the style and presentation of the contact info sections. It's also interesting to me how the <span class="fw-bold">Related Projects</span> section of this page (see below) is essentially a simplified version of that entire project. Funny how things turn out sometimes.</p>
   <p class="fw-bold mb-1">Relevant links:</p>
@@ -45,8 +45,8 @@ link_site: "CodePen"
 
 <!-- Related projects -->
 <section class="container-fluid main-section">
-  <h2 class="{{ site.subheading }}">Related Projects</h2>
-  <p class="fs-5 fw-light">This is certification project <span class="fw-bold">5 of 5</span> in the <a class="external-link" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Responsive Web Design track</a> at freeCodeCamp. Each of my project submissions in this track is linked below.</p>
+  <h2 class="site-heading">Related Projects</h2>
+  <p class="site-subheading">This is certification project <span class="fw-bold">5 of 5</span> in the <a class="external-link" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Responsive Web Design track</a> at freeCodeCamp. Each of my project submissions in this track is linked below.</p>
   <div class="row row-cols-1 row-cols-xl-2 mx-2 my-3">
     {% assign related_projects = site.projects | where: "related", "Responsive Web Design" | sort: "related_key" %}
     {% for project in related_projects %}

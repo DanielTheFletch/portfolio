@@ -9,24 +9,24 @@ title: Certifications
 
 <!-- Certifications by section -->
 {% for cert_type in site.data.certifications %}
-  <section class="container-fluid main-section">
-    <h2 class="{{ site.subheading }}">{{ cert_type.title }}</h2>
-    <p class="fs-5 fw-light mt-0 mb-3">{{ cert_type.subtitle }}</p>
+  <section class="container main-section">
+    <h2 class="site-heading">{{ cert_type.title }}</h2>
+    <p class="site-subheading">{{ cert_type.subtitle }}</p>
     {% assign certs = cert_type.certs | sort: "date" | reverse %}
     {% for cert in certs %}
       <div class="row row-cols-2">
         <div class="col">
-          <p class="fs-5 fw-bold mb-0">
+          <p class="fw-bold mb-0">
             <a class="external-link text-decoration-none" href={{ cert.link }} target="_blank">
               <span class="text-decoration-underline">{{ cert.name }}</span>
               <i class="fa-solid fa-up-right-from-square"></i>
             </a>
           </p>
-          <p class="fs-6 mb-1">Awarded by {{ cert.org }}</p>
+          <p class="mb-1">Awarded by {{ cert.org }}</p>
         </div>
         <div class="col text-end">
           {% assign shortened_date = cert.date | date_to_long_string | split: " " | shift | join: " " %}
-          <p class="fs-5 fw-light">{{ shortened_date }}</p>
+          <p class="fw-light">{{ shortened_date }}</p>
         </div>
       </div>
       <div class="row row-cols-1 mb-3">

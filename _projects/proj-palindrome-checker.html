@@ -30,8 +30,8 @@ link_site: "CodePen"
 
 <!-- Description and details -->
 <section class="container-fluid main-section">
-  <h2 class="{{ site.subheading }}">Project Details</h2>
-  <p class="fs-5 fw-light">{{ page.desc }}</p>
+  <h2 class="site-heading">Project Details</h2>
+  <p class="site-subheading">{{ page.desc }}</p>
   <p>My implementation of a basic palindrome checker in the JavaScript language. This was my first hands-on project where I got to really dig into JavaScript programming, especially when it came to exploring ES6+ features. Map objects and arrow functions are two such examples that ultimately ended up in my solution.</p>
   <p class="mb-1">The CodePen link above will open an in-browser code editor and console. Tinkering at the console will enable you to interface with the&nbsp;&nbsp;<code>palindrome</code>&nbsp;&nbsp;function I implemented. Try testing out some of my personal favorite palindromes:</p>
   <ul class="mb-4">
@@ -49,8 +49,8 @@ link_site: "CodePen"
 
 <!-- Related projects -->
 <section class="container-fluid main-section">
-  <h2 class="{{ site.subheading }}">Related Projects</h2>
-  <p class="fs-5 fw-light">This is certification project <span class="fw-bold">1 of 5</span> in the <a class="external-link" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/">JavaScript Algorithms and Data Structures track</a> at freeCodeCamp. Each of my project submissions in this track is linked below.</p>
+  <h2 class="site-heading">Related Projects</h2>
+  <p class="site-subheading">This is certification project <span class="fw-bold">1 of 5</span> in the <a class="external-link" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/">JavaScript Algorithms and Data Structures track</a> at freeCodeCamp. Each of my project submissions in this track is linked below.</p>
   <div class="row row-cols-1 row-cols-xl-2 mx-2 my-3">
     {% assign related_projects = site.projects | where: "related", "FCC JS Algorithms" | sort: "related_key" %}
     {% for project in related_projects %}
