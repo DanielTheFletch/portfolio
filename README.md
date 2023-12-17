@@ -1,6 +1,6 @@
 # Daniel Fletcher's Portfolio
 
-Welcome to the repository for [my online portfolio](#), a static website hosted on GitHub Pages.
+Welcome to the repository for [my online portfolio](https://www.daniel-fletcher-portfolio.com), a static website hosted on GitHub Pages.
 Check out the website itself if you want to view my portfolio proper; check out the source code
 here in this repository if you want to investigate the implementation details!
 
@@ -16,20 +16,20 @@ code in this repository.
 ## My portfolio, at a glance
 
 My portfolio website is divided into six main sections:
-- **[About](#)** &ndash; Learn about me, both personally and professionally. You can also find my primary contact
+- **[Home](https://www.daniel-fletcher-portfolio.com)** &ndash; Learn about me, both personally and professionally. You can also find my primary contact
 information here, as well as a brief walkthrough of the site's main pages&mdash;the same thing you're reading right
 now!
-- **[Activity](#)** &ndash; A blog of sorts that also serves as a changelog for my portfolio. I aim to create new
+- **[Activity](https://www.daniel-fletcher-portfolio.com/activity)** &ndash; A blog of sorts that also serves as a changelog for my portfolio. I aim to create new
 posts whenever I update the site, whether that be adding new projects, implementing new features, or working in key
 bug fixes.
-- **[Projects](#)** &ndash; Take a look at the multitude of projects I have worked on, ranging from Harvard
+- **[Projects](https://www.daniel-fletcher-portfolio.com/projects)** &ndash; Take a look at the multitude of projects I have worked on, ranging from Harvard
 University academic submissions to personal passion projects. This page contains a rotating selection of three
 featured projects and a comprehensive index of all my past project work.
-- **[Certifications](#)** &ndash; Check out all the certifications I have earned so far in my computer science
+- **[Certifications](https://www.daniel-fletcher-portfolio.com/certifications)** &ndash; Check out all the certifications I have earned so far in my computer science
 journey, complete with links to the corresponding certification credentials.
-- **[Links](#)** &ndash; All of my relevant online profiles are listed here, including those found on learning
+- **[Links](https://www.daniel-fletcher-portfolio.com/links)** &ndash; All of my relevant online profiles are listed here, including those found on learning
 sites, networking platforms, and the like.
-- **[Resources](#)** &ndash; Look into some of the *incredible* resources that have helped me get to where I am now.
+- **[Resources](https://www.daniel-fletcher-portfolio.com/resources)** &ndash; Look into some of the *incredible* resources that have helped me get to where I am now.
 Seriously, I would not be where I am today without these resources and the amazing people behind them. All relevant
 links included.
 
