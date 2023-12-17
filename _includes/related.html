@@ -8,21 +8,19 @@
   <div class="row row-cols-1 row-cols-xl-2 my-3">
     {% assign related_projects = site.projects | where: "related", related | sort: "related_key" %}
     {% for project in related_projects %}
-      <div class="col-11 col-xl-5 mx-auto ms-xl-0 me-xl-5 my-2 ps-3 pe-4 py-3 project-item">
+      <div class="col-11 col-xl-5 m-3 ps-3 pe-4 py-3 project-item">
         <a href={{ project.url | relative_url }} class="stretched-link"></a>
-        <div class="d-flex justify-content-between align-items-start">
-          <div>
-            {% assign shortened_date = project.date | date_to_string | split: " " | shift | join: " " %}
-            <p class="fs-5 mb-0">{{ project.title }}</p>
-            <p><small class="fw-light text-body-secondary">{{ shortened_date }}</small></p>
-          </div>
-          <div class="fs-4 text-center">
-            {% for icon in project.icons %}
-              &nbsp;<span class="{{ icon }}"></span>&nbsp;
-            {% endfor %}
-          </div>
+        <div>
+          {% assign shortened_date = project.date | date_to_string | split: " " | shift | join: " " %}
+          <p class="fs-5 fw-bold mb-0">{{ project.title }}</p>
+          <p><small class="fw-light text-body-secondary">{{ shortened_date }}</small></p>
         </div>
         <p>{{ project.desc }}</p>
+        <div class="fs-5">
+          {% for icon in project.icons %}
+            &nbsp;<span class="{{ icon }}"></span>&nbsp;
+          {% endfor %}
+        </div>
       </div>
     {% endfor %}
   </div>
