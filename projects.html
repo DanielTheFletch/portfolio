@@ -20,7 +20,7 @@ title: Project Work
         <a href={{ project.url | relative_url }} class="stretched-link"></a>
         <div class="col-lg-4 d-flex justify-content-center align-items-center">
           {% assign img_src = project.img_src | prepend: "/assets/img/proj-previews/" %}
-          <img src="{{ img_src | prepend: site.baseurl | prepend: site.url }}" 
+          <img src="{{ img_src | relative_url }}" 
                class="img-fluid rounded mb-4 mb-lg-0 shadow" 
                alt="{{ project.img_alt }}">
         </div>

@@ -18,7 +18,7 @@ layout: default
     <div class="col-md-4 mb-3 d-flex justify-content-center align-items-center">
       <div class="ratio ratio-16x9">
         {% assign img_src = page.img_src | prepend: "/assets/img/proj-previews/" %}
-        <img src="{{ img_src | prepend: site.baseurl | prepend: site.url }}"
+        <img src="{{ img_src | relative_url }}"
              class="img-fluid project-thumbnail" 
              alt="{{ page.img_alt }}">
       </div>
