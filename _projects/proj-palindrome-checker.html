@@ -7,7 +7,9 @@ slug: palindrome-checker
 date: 2023-09-11
 desc: "JavaScript implementation of a simple palindrome validator function."
 type: "freeCodeCamp Certification Project"
-related: "FCC JS Algorithms"
+
+# Related project info
+related: "JavaScript Algorithms and Data Structures"
 related_key: 1
 
 # Icons
@@ -48,28 +50,4 @@ link_site: "CodePen"
 </section>
 
 <!-- Related projects -->
-<section class="container main-section">
-  <h2 class="site-heading">Related Projects</h2>
-  <p class="mt-2">This is certification project <span class="fw-bold">1 of 5</span> in the <a class="external-link" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/">JavaScript Algorithms and Data Structures track</a> at freeCodeCamp. Each of my project submissions in this track is linked below.</p>
-  <div class="row row-cols-1 row-cols-xl-2 my-3">
-    {% assign related_projects = site.projects | where: "related", "FCC JS Algorithms" | sort: "related_key" %}
-    {% for project in related_projects %}
-      <div class="col-11 col-xl-5 mx-auto ms-xl-0 me-xl-5 my-2 ps-3 pe-4 py-3 project-item">
-        <a href={{ project.url | relative_url }} class="stretched-link"></a>
-        <div class="d-flex justify-content-between align-items-start">
-          <div>
-            {% assign shortened_date = project.date | date_to_string | split: " " | shift | join: " " %}
-            <p class="fs-5 mb-0">{{ project.title }}</p>
-            <p><small class="fw-light text-body-secondary">{{ shortened_date }}</small></p>
-          </div>
-          <div class="fs-4 text-center">
-            {% for icon in project.icons %}
-              &nbsp;<span class="{{ icon }}"></span>&nbsp;
-            {% endfor %}
-          </div>
-        </div>
-        <p>{{ project.desc }}</p>
-      </div>
-    {% endfor %}
-  </div>
-</section>
+{% include related.html %}
