@@ -11,7 +11,7 @@
         - name: "Enroll on edX (FOR FREE!)"
           href: "https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science"
     - name: "freeCodeCamp"
-      blurb: "This free and open-source learning hub offers a wide variety of project-based certification courses. The recommended curriculum starts with foundations in web development (e.g., HTML and CSS) before continuing into more advanced topics like programming fundamentals, front-end frameworks, and integrating APIs with back-end development. I am currently working through the Front-End Development Libraries certification."
+      blurb: "This free and open-source learning hub offers a wide variety of project-based certification courses. The recommended curriculum starts with foundations in web development (e.g., HTML and CSS) before continuing into more advanced topics like programming fundamentals, front-end frameworks, and using APIs in back-end development. I am currently working through the Front-End Development Libraries certification."
       links:
         - name: "Official Website"
           href: "https://www.freecodecamp.org/"
@@ -37,7 +37,7 @@
         - name: "Otta"
           href: "https://app.otta.com/"
     - name: "Jobs in Game Development"
-      blurb: "Video game development is one of my greatest personal interests. As I have looked for jobs in the industry, I have found multiple job boards and collections specifically catered to game development. Huge shoutout to <a class=\"external-link\" href=\"https://www.linkedin.com/in/amirsatvat/\">Amir Satvat</a>, an unwavering champion of game developers and the well-being of the industry at large."
+      blurb: "Video game development is one of my greatest personal interests. As I have looked for jobs in the industry, I have found multiple job boards and collections specifically catered to game development. Huge shoutout to <a class=\"external-link\" href=\"https://www.linkedin.com/in/amirsatvat/\">Amir Satvat</a>, who maintains the third resource on this list. He's an unwavering champion of game developers and the well-being of the industry at large."
       links:
         - name: "Work with Indies"
           href: "https://www.workwithindies.com/"
@@ -46,10 +46,10 @@
         - name: "Amir Satvat's Comprehensive List of Games Jobs"
           href: "https://www.dropbox.com/s/6icqqopmsp39ool/221119%20-%20Games%20Jobs.xlsx"
 - title: "References and Documentation"
-  subtitle: "A wide array of handy technical references that I use <span class=\"fst-italic\">all the time</span>."
+  subtitle: "A wide array of handy technical references that I use on a regular basis."
   resources:
     - name: "Quick Reference"
-      blurb: "Simple and powerful sites for speedy retrieval of specific information. These sites can greatly reduce headaches for some basic tasks like deciphering an unfamiliar file type or double-checking a particular keyboard shortcut in Visual Studio Code."
+      blurb: "Simple and powerful sites for speedy retrieval of specific information. These sites can greatly reduce headaches for basic tasks like deciphering an unfamiliar file type or double-checking a particular keyboard shortcut in Visual Studio Code."
       links:
         - name: "ASCII Table"
           href: "https://www.asciitable.com/"
@@ -60,7 +60,7 @@
         - name: "VS Code Keyboard Shortcuts (Windows)"
           href: "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf"
     - name: "Fonts and Typefaces"
-      blurb: "Whenever I'm working with alternate typefaces or even just scouting beyond the default font choices (I die a little inside every time I use 11pt Calibri or Arial), I have a select few resources that I gravitate towards for guidance."
+      blurb: "Whenever I'm working with alternate typefaces or even just scouting for non-default font choices (I die a little inside every time I use 11-pt Calibri or Arial), I have a select few resources that I gravitate towards for guidance."
       links:
         - name: "Emojipedia"
           href: "https://emojipedia.org/"

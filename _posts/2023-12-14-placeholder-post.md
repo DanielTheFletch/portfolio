@@ -5,28 +5,28 @@ slug: introducing-daniels-online-portfolio-website
 
 Hello, World! And welcome to my online portfolio website!
 
-After attaining my computer science degree last December,
-I started working on all sorts of projects in the pursuit of learning new skills. That said,
-I did not take the time to find some way to organize all of these disparate works in an
-easily-accessible, centralized location. Fast forward to December 2023, and voila! We're
-finally here.
+After attaining my computer science degree last December, I started working on all sorts
+of projects in the pursuit of learning new skills. That said, I did not take the time to
+organize all of these disparate works in an easily-accessible, centralized location. Fast
+forward to December 2023, and voila! We're finally here.
 
 This truly has been a monumental undertaking for me&mdash;easily the largest solo development
-project I have worked on to date. Following much trial and error with various technologies and
-frameworks, I ultimately decided on Jekyll to be the core of my portfolio's functionality.
-Jekyll's native framework offers exactly what I needed, particularly the ability to create
-templated content and pages (like this one) while still maintaining the static nature of the site.
+project I have worked on to date. I treated the development process like that of a
+professional software engineering project, using tools like Git to keep organized and
+stay on track.
 
-Then came... *the development cycle*. I tried to treat the development of my portfolio like a
-professional development project, doing my best to use tools like Git to keep organized and
-stay on track. The biggest hurdle I faced in development was easily my own underestimation of
-how much time implementing some of my ideas would take (individual pages for each and every
-project was a major offender on that front). Now that I'm here, though, I am very happy with
-how everything turned out.
+The biggest hurdle I faced in development was easily the sheer amount of time needed to get
+everything looking and functioning the way I wanted. I *severely* underestimated how long
+certain features would take to implement, like creating unique pages for each and every
+individual project on the portfolio. Hindsight is 20/20, I guess...
 
-With all of that said, please take a look around the site and let me know what you think!
-And, if you're interested, below are the myriad features coming with v1.0.0 of Daniel
-Fletcher's Portfolio site.
+Now that I have reached this point, though, I am very happy with how things turned out. All
+the roadblocks along the way served as valuable learning experiences, and they were just small
+parts of the colossal learning experience that was making this portfolio from the ground up.
+Feel free to take a tour of the site and let me know what you think of it!
+
+If you're interested, listed below are the features and content coming with v1.0.0 of Daniel
+Fletcher's Portfolio site. Huzzah!
 
 ---
 
@@ -110,10 +110,15 @@ All relevant links included.
     - RGB Defender
     - Recipes from Hyrule
     - Random Quote Machine
+- Core color scheme
+  - <span style="color: #0D0C1D;">&nbsp;Dark (#0D0C1D)&nbsp;</span>
+  - <span style="color: #EFF7FF;">&nbsp;Light (#EFF7FF)&nbsp;</span>
+  - <span style="color: #8C001A;">&nbsp;Primary (#8C001A)&nbsp;</span>
+  - <span style="color: #007991;">&nbsp;Secondary (#007991)&nbsp;</span>
+  - <span style="color: #2660A4;">&nbsp;Tertiary (#2660A4)&nbsp;</span>
 - Core technologies behind site functionality linked in footer
 - Links opening a new tab denoted by&nbsp;&nbsp;**<span class="fa-solid fa-up-right-from-square"></span>**
-- Reddish-blue color scheme
-- Spinning-gear CSS animation on Home page
+- CSS animation on hero in Home page: Spinning gears
 
 ---
 
