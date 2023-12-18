@@ -1,9 +1,9 @@
 ---
-title: Introducing Daniel's Online Portfolio Website
-slug: introducing-daniels-online-portfolio-website
+title: Introducing Daniel Fletcher's Online Portfolio
+slug: introducing-daniel-fletchers-online-portfolio
 ---
 
-Hello, World! And welcome to my online portfolio website!
+Hello, World! And welcome to my hand-crafted portfolio website!
 
 After attaining my computer science degree last December, I started working on all sorts
 of projects in the pursuit of learning new skills. That said, I did not take the time to
@@ -34,7 +34,7 @@ Fletcher's Portfolio site. Huzzah!
 {% assign page_link = site.data.navigation[0].link %}
 - <a class="external-link fw-bold" href="{{ page_link | relative_url }}">Home</a> &ndash; Learn about
 me, both personally and professionally. You can also find my primary contact information
-here, as well as a brief walkthrough of the site's main pages&mdash;that's what you're
+here, as well as a brief walkthrough of the site's main pages&mdash;it's the same as what you're
 reading right now!
 {% assign page_link = site.data.navigation[1].link %}
 - <a class="external-link fw-bold" href="{{ page_link | relative_url }}">Activity</a> &ndash; A blog of
@@ -116,7 +116,7 @@ All relevant links included.
   - <span style="color: #8C001A;">&nbsp;Primary (#8C001A)&nbsp;</span>
   - <span style="color: #007991;">&nbsp;Secondary (#007991)&nbsp;</span>
   - <span style="color: #2660A4;">&nbsp;Tertiary (#2660A4)&nbsp;</span>
-- Core technologies behind site functionality linked in footer
+- Main technologies used to power site functionality linked in footer
 - Links opening a new tab denoted by&nbsp;&nbsp;**<span class="fa-solid fa-up-right-from-square"></span>**
 - CSS animation on hero in Home page: Spinning gears
 
