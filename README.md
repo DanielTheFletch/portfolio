@@ -1,16 +1,15 @@
 # Daniel Fletcher's Portfolio
 
-Welcome to the repository for [my online portfolio](https://www.daniel-fletcher-portfolio.com), a static website hosted on GitHub Pages.
-Check out the website itself if you want to view my portfolio proper; check out the source code
-here in this repository if you want to investigate the implementation details!
+Welcome to the repository for my online portfolio, a static website hosted on GitHub Pages.
+Check out [the website itself](https://www.daniel-fletcher-portfolio.com) if you want to view 
+my portfolio proper; check out the source code here in this repository if you want to investigate 
+the implementation details!
 
 
 ## Open source licensing
 
-All code in this repository is licensed under the [MIT License](./LICENSE.md), meaning that it can be forked,
-retooled, distributed, or otherwise re-used provided that the terms of the license are still
-included in any subsequent works. Please read the license in its entirety before using any
-code in this repository.
+All code in this repository is licensed under the [MIT License](./LICENSE.md). Please read the 
+license in its entirety before using any code in this repository.
 
 
 ## My portfolio, at a glance
