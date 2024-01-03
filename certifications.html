@@ -30,8 +30,7 @@ title: Certifications
       <div class="row row-cols-1 mb-3">
         <div class="col">
           <ul class="list-unstyled mt-1">
-            {% assign sorted_skills = cert.skills | sort %}
-            {% for skill in sorted_skills %}
+            {% for skill in cert.skills %}
               <li class="badge bg-primary pill-rounded fw-normal">{{ skill }}</li>
             {% endfor %}
           </ul>

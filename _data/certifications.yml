@@ -1,5 +1,17 @@
-- title: "Web Development"
-  subtitle: "Certifications in the realm of HTML, CSS, JavaScript, and beyond."
+- title: "CS50 at Harvard University"
+  subtitle: "Certificates of completion for a variety of courses in Harvard University's CS50 curriculum."
+  certs:
+  - name: "CS50's Introduction to Programming with Python"
+    date: 2024-01-03
+    link: "https://cs50.harvard.edu/certificates/1b3ab5e5-6737-437d-9d7a-3821c2d1a9f0"
+    org: "CS50 at Harvard University"
+    skills:
+    - Python
+    - Pytest
+    - PyPI
+    - Sphinx
+- title: "freeCodeCamp"
+  subtitle: "Web development certifications in the realm of HTML, CSS, JavaScript, and beyond."
   certs:
   - name: "Responsive Web Design"
     date: 2023-08-21
