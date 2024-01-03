@@ -16,7 +16,7 @@ title: Project Work
   <h2 class="site-heading text-center">Featured Projects</h2>
   <div class="container d-flex flex-column align-items-center mb-3">
     {% for project in featured_projects %}
-      <div class="row featured-item text-secondary-emphasis mt-4 mb-3 px-3 py-4">
+      <div class="row featured-item text-secondary-emphasis mt-4 mb-2 px-3 py-4">
         <a href={{ project.url | relative_url }} class="stretched-link"></a>
         <div class="col-lg-4 d-none d-lg-flex justify-content-center align-items-center">
           {% assign img_src = project.img_src | prepend: "/assets/img/proj-previews/" %}
