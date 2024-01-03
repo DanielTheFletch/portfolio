@@ -1,0 +1,76 @@
+---
+# Title variants
+title: color50
+slug: color50
+
+# Key information
+date: 2024-01-03
+desc: "A lightweight Python package for printing more colorful output at the command line."
+type: "Course Project: CS50P at Harvard University"
+
+# Icons
+icons:
+  - "fa-brands fa-python"
+  - "fa-solid fa-box"
+  - "fa-solid fa-book"
+
+# Preview image metadata
+img_src: "preview-color50.png"
+img_alt: "A colorful thumbnail featuring the text \"color50\" and the Python logo"
+
+# Skills learned
+skills:
+  - Python
+  - PyPI
+  - Sphinx
+
+# Direct link metadata
+link_href: "https://pypi.org/project/color50"
+link_site: "PyPI"
+---
+
+<!-- Description and details -->
+<section class="container main-section">
+  <h2 class="site-heading">Project Details</h2>
+  <p class="site-subheading">{{ page.desc }}</p>
+  <p>For my final project submission in Harvard University's CS50P course, I wanted to challenge myself to learn something entirely new related to the Python language. Something that's always interested me is the logistics behind creating and distributing a Python package for other developers to use in their projects, so I ultimately decided to make that the focus of my project. After some further brainstorming, I came to the conclusion that I wanted to create a Python package to help streamline the process of printing text in color at the terminal. This is another thing I've always been fascinated by but never really looked into before, so I thought it would be a great fit to pair with the package idea.</p>
+  <p class="mb-4">The final result is <span class="fw-bold text-primary-emphasis">color50</span>, a Python package consisting of four modules, two classes, multiple helper functions, and a series of named constants. See below for a brief summary of the package contents, and check out the <a class="external-link" href="https://color50.readthedocs.io/en/latest/usage.html">Usage Guide</a> or <a class="external-link" href="https://color50.readthedocs.io/en/latest/demo.html">Demo Files</a> sections of the documentation for some simple demonstrations!</p>
+  <p class="fw-bold mb-1"><span class="text-primary-emphasis">color50</span> package contents:</p>
+  <ul class="mb-4">
+    <li>
+      <span class="fw-bold">color</span> module &ndash; Contains the custom &nbsp;<code>Color</code>&nbsp; class and related functionality.
+      <ul class="mb-1">
+        <li>&nbsp;<code>Color</code>&nbsp; class &ndash; A custom class for storing and using colors in Python. Stores colors internally as the color's corresponding RGB values.</li>
+      </ul>
+    </li>
+    <li>
+      <span class="fw-bold">core_functions</span> module &ndash; Contains four standalone functions that enable more intuitive color generation and usage.
+      <ul class="mb-1">
+        <li>&nbsp;<code>rgb</code>&nbsp; function &ndash; Returns a valid &nbsp;<code>Color</code>&nbsp; object based on the RGB values passed as parameters.</li>
+        <li>&nbsp;<code>hexcode</code>&nbsp; function &ndash; Returns a valid &nbsp;<code>Color</code>&nbsp; object based on the HEX color code passed as a parameter.</li>
+        <li>&nbsp;<code>css</code>&nbsp; function &ndash; Returns a valid &nbsp;<code>Color</code>&nbsp; object based on the CSS color name passed as a parameter.</li>
+        <li>&nbsp;<code>colorize</code>&nbsp; function &ndash; Returns a valid &nbsp;<code>Color</code>&nbsp; Intended for use as a decorator that enables
+        a simple-yet-effective way to alter the color of the output for an entire function.</li>
+      </ul>
+    </li>
+    <li>
+      <span class="fw-bold">colorstr</span> module &ndash; Contains the custom &nbsp;<code>ColorStr</code>&nbsp; class and related functionality.
+      <ul class="mb-1">
+        <li>&nbsp;<code>ColorStr</code>&nbsp; class &ndash; A custom class for storing and using colorful strings in Python. Provides separate properties for optional usage of both foreground and background color modifiers.</li>
+      </ul>
+    </li>
+    <li>
+      <span class="fw-bold">constants</span> module &ndash; Contains an assortment of pre-defined, string literal constants for interfacing more directly with ANSI color code sequencing.
+    </li>
+  </ul>
+  <p>This project ended up being <span class="fst-italic">much</span> grander in scope than I originally anticipated; however, I still found it to be an extremely rewarding experience. I'm very happy with what I've learned, the experience I've gained, and how the project turned out! I hope other Python developers or CS50 students can find some utility in the <span class="fw-bold text-primary-emphasis">color50</span> package.</p>
+  <p class="mt-4 mb-0">And with that, I now must say:</p>
+  <p class="mt-0 mb-4"><span class="fst-italic">This was CS50P!</span></p>
+  <p class="fw-bold mb-1">Relevant links:</p>
+  <ul>
+    <li><a class="external-link" href="https://cs50.harvard.edu/python/2022/project/">CS50P final project specifications</a></li>
+    <li><a class="external-link" href="https://pypi.org/project/color50">Project listing on PyPI</a></li>
+    <li><a class="external-link" href="https://github.com/danielthefletch/color50">Project source code on GitHub</a></li>
+    <li><a class="external-link" href="https://color50.readthedocs.io">Read the project documentation</a></li>
+  </ul>
+</section>

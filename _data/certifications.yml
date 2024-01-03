@@ -9,7 +9,6 @@
     - Python
     - Pytest
     - PyPI
-    - Sphinx
 - title: "freeCodeCamp"
   subtitle: "Web development certifications in the realm of HTML, CSS, JavaScript, and beyond."
   certs:
