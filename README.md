@@ -50,9 +50,9 @@ documentation.
 
 ## Site information
 
-Daniel Fletcher's Portfolio **v1.0.0**  
+Daniel Fletcher's Portfolio **v1.0.1**  
 Hosted and served on [GitHub Pages](https://docs.github.com/en/pages)  
 Source code available at [site GitHub Repo](https://github.com/DanielTheFletch/portfolio)  
 Licensed under the [MIT License](./LICENSE.md)  
 
-Copyright &copy; 2023 Daniel Fletcher
+Copyright &copy; 2024 Daniel Fletcher

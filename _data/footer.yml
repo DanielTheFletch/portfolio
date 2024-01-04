@@ -3,11 +3,11 @@
 # Site information
 site-info:
   author: 
-    prefix: "Copyright &copy; 2023"
+    prefix: "Copyright &copy; 2024"
     phrase: "Daniel Fletcher"
   version:
     prefix: "Daniel Fletcher's Portfolio"
-    phrase: 1.0.0
+    phrase: 1.0.1
   license:
     prefix: "Licensed under the"
     phrase: "MIT License"
