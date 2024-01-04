@@ -8,9 +8,9 @@ title: Recent Activity
 </div>
 
 <!-- Latest post -->
+{% assign latest = site.posts | first %}
 <section class="container main-section">
   <h2 class="site-heading">Latest Post</h2>
-  {% assign latest = site.posts | first %}
   <div class="container my-3">
     <div class="row row-cols-1 position-relative featured-item text-secondary-emphasis mt-4 mb-3 px-3 py-4">
       <a href={{ latest.url | relative_url }} class="stretched-link"></a>
@@ -28,6 +28,19 @@ title: Recent Activity
 <!-- Post history -->
 <section class="container main-section">
   <h2 class="site-heading">Post History</h2>
-  <p class="fw-bold text-primary-emphasis mt-3 mb-1">More content coming soon!</p>
-  <p>Whenever the next activity post comes to fruition, this section of the page will populate with a complete backlog of previous posts.</p>
+  <div class="row row-cols-1 mx-auto my-3 d-flex justify-content-center">
+    {% for post in site.posts %}
+      {% if post != latest %}
+        <div class="col m-3 ps-3 pe-4 py-3 project-item">
+          <a href={{ post.url | relative_url }} class="stretched-link"></a>
+          <div>
+            <p class="fs-5 fw-bold mb-0">{{ post.title }}</p>
+            <p><small class="fw-light text-body-secondary">{{ post.date | date_to_string }}</small></p>
+          </div>
+          <p>{{ post.excerpt }}</p>
+          <i class="fa-solid fa-ellipsis mb-4"></i>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
 </section>
