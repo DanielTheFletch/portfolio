@@ -22,7 +22,7 @@ now!
 posts whenever I update the site, whether that be adding new projects, implementing new features, or working in key
 bug fixes.
 - **[Projects](https://www.daniel-fletcher-portfolio.com/projects)** &ndash; Take a look at the multitude of projects I have worked on, ranging from Harvard
-University academic submissions to personal passion projects. This page contains a rotating selection of three
+University academic submissions to personal passion projects. This page contains a rotating selection of
 featured projects and a comprehensive index of all my past project work.
 - **[Certifications](https://www.daniel-fletcher-portfolio.com/certifications)** &ndash; Check out all the certifications I have earned so far in my computer science
 journey, complete with links to the corresponding certification credentials.
