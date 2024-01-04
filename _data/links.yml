@@ -17,14 +17,14 @@
   subtitle: "Links will, in a new tab, open a PDF shared via Google Drive."
   items:
     - name: "Résumé"
-      display: "Résumé Daniel Fletcher 2023"
+      display: "Résumé Daniel Fletcher 2024"
       icon: "fa-solid fa-file-pdf"
-      link: "https://drive.google.com/file/d/1w2AEzM1YzQeajZrdy7ZjQSZy1OANrFPf/view?usp=drive_link"
+      link: "https://drive.google.com/file/d/16yXhNorHsZIuR-8u1JBuwTh9QMAsYnuh/view?usp=drive_link"
       is_external_link: true
     - name: "Curriculum Vitae"
-      display: "CV Daniel Fletcher 2023"
+      display: "CV Daniel Fletcher 2024"
       icon: "fa-solid fa-file-pdf"
-      link: "https://drive.google.com/file/d/1_LWT8Ao3NQPwZOpaX-h34Z008wq0i_7R/view?usp=drive_link"
+      link: "https://drive.google.com/file/d/1Mt57dByqv0Q8lxj1kspkIFQnftC7HRqC/view?usp=drive_link"
       is_external_link: true
 - title: "Online Learning"
   subtitle: "A selection of profiles from some of the online learning resources I use."
