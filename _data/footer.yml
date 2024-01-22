@@ -7,7 +7,7 @@ site-info:
     phrase: "Daniel Fletcher"
   version:
     prefix: "Daniel Fletcher's Portfolio"
-    phrase: 1.0.1
+    phrase: 1.0.2
   license:
     prefix: "Licensed under the"
     phrase: "MIT License"
