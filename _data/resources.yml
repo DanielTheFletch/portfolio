@@ -2,12 +2,12 @@
   subtitle: "A handful of learning institutions and organizations that have been instrumental to my professional, personal, and academic growth."
   resources:
     - name: "Harvard CS50"
-      blurb: "Harvard University's one-of-a-kind \"Introduction to Computer Science\" course taught by professor <a class=\"external-link\" href=\"https://www.linkedin.com/in/malan/\">David J. Malan</a>, as well as the many other constituent courses offered under the CS50 umbrella. The online course offerings are completely free to enroll in (seriously), and they offer an unparalleled learning experience for CS newcomers and veterans alike. I am currently working on my final projects for CS50x and CS50P, and I hope to enroll in more CS50 courses come 2024!"
+      blurb: "Harvard University's one-of-a-kind \"Introduction to Computer Science\" course taught by professor <a class=\"external-link\" href=\"https://www.linkedin.com/in/malan/\">David J. Malan</a>, as well as the many other constituent courses offered under the CS50 umbrella. The online course offerings are completely free to enroll in (seriously), and they offer an unparalleled learning experience for CS newcomers and veterans alike. I have completed CS50P, and I hope to complete CS50x in the next month or so!"
       links:
         - name: "Harvard University"
           href: "https://www.harvard.edu/"
-        - name: "CS50x Course Website"
-          href: "https://cs50.harvard.edu/x/2023/"
+        - name: "CS50x Course Website (2024 version)"
+          href: "https://cs50.harvard.edu/x/2024/"
         - name: "Enroll on edX (FOR FREE!)"
           href: "https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science"
     - name: "freeCodeCamp"
@@ -26,6 +26,11 @@
           href: "https://www.theodinproject.com/paths"
         - name: "Foundations Course"
           href: "https://www.theodinproject.com/paths/foundations/courses/foundations"
+    - name: "Gamified Learning"
+      blurb: "A selection of free-to-play games that I have played explicitly for the purpose of learning something new or solidifying a skill. It's hard to beat learning through the lens of a video game!"
+      links:
+        - name: "Flexbox Zombies from Mastery Games"
+          href: "https://mastery.games/flexboxzombies/"
 - title: "Job Boards"
   subtitle: "A variety of online job boards I have used frequently throughout the course of my job search."
   resources:
